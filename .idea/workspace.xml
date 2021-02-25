@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="829ca2e2-4955-4e14-bc39-8bf09b456177" name="Default Changelist" comment="" />
+    <list default="true" id="829ca2e2-4955-4e14-bc39-8bf09b456177" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +22,9 @@
     <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -163,7 +171,8 @@
       <option name="presentableId" value="Default" />
       <updated>1614045152855</updated>
       <workItem from="1614045154069" duration="6279000" />
-      <workItem from="1614065023716" duration="3231000" />
+      <workItem from="1614065023716" duration="4286000" />
+      <workItem from="1614221434649" duration="7260000" />
     </task>
     <servers />
   </component>
@@ -183,10 +192,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614064962167" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1614067989735">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1614230426158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1614067989735" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1614230426158" />
+    <state x="663" y="235" width="594" height="570" key="find.popup" timestamp="1614233591096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="235" width="594" height="570" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614233591096" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614066427071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
