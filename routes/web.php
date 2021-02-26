@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,7 @@ Route::get('/home', function () {
 Route::get('publish', [HomeController::class, 'index'])->name('publish');
 Route::post('publish', [HomeController::class, 'create'])->name('publish.create');
 Route::get('mail', [HomeController::class, 'mail']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
