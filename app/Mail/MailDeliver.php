@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Note;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -14,7 +15,7 @@ class MailDeliver extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $content;
+    protected $mail;
 
     /**
      * Create a new message instance.
@@ -22,8 +23,7 @@ class MailDeliver extends Mailable
      */
     public function __construct ($mail)
     {
-        //
-        $this->content = $mail;
+        $this->mail = $mail;
     }
 
     /**
@@ -32,7 +32,7 @@ class MailDeliver extends Mailable
      */
     public function build ()
     {
-
-        return $this->with(['messages' => $this->content])->markdown('emails.deliver');
+        return $this->with(['messages' => $this->mail])
+            ->markdown('emails.deliver');
     }
 }
