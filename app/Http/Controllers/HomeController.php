@@ -6,6 +6,10 @@ use App\Mail\MailDeliver;
 use App\Models\Note;
 use Illuminate\Support\Facades\Mail;
 
+/**
+ * Class HomeController
+ * @package App\Http\Controllers
+ */
 class HomeController extends Controller
 {
     /**
