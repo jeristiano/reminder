@@ -5,7 +5,7 @@
 
 `{{ $message->tag->name }}`
 
-##  {{ $message->author->name }}
+##  {{ $message->title }}
 
 {{ $message->text }}
 

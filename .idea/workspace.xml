@@ -4,11 +4,13 @@
     <list default="true" id="829ca2e2-4955-4e14-bc39-8bf09b456177" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/MailDeliver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/MailDeliver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/emails/deliver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/deliver.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/publish/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/publish/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +164,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\reminder\resources\views\layouts" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -179,7 +186,7 @@
       <workItem from="1614045154069" duration="6279000" />
       <workItem from="1614065023716" duration="4286000" />
       <workItem from="1614221434649" duration="7260000" />
-      <workItem from="1614562514942" duration="6745000" />
+      <workItem from="1614562514942" duration="15858000" />
     </task>
     <servers />
   </component>
@@ -191,10 +198,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="396" key="#Composer/0.0.1920.1040@0.0.1920.1040" timestamp="1614045746170" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614565842789">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614577282259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614565842789" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614577282259" />
     <state x="774" y="438" key="NewPhpFileDialog" timestamp="1614065494660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -203,14 +210,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614064962167" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1614569078255">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1614580875877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1614569078255" />
-    <state x="663" y="235" width="594" height="570" key="find.popup" timestamp="1614565138583">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1614580875877" />
+    <state x="477" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614581742518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="235" width="594" height="570" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614565138583" />
+    <state x="477" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1614581742518" />
+    <state x="663" y="235" width="594" height="570" key="find.popup" timestamp="1614584744613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="235" width="594" height="570" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614584744613" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614568282294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
