@@ -7,7 +7,7 @@
 
 ##  {{ $message->title }}
 
-{{ $message->text }}
+{!! $message->text !!}
 
 -----
 

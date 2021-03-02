@@ -29,15 +29,18 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="category">标签：</label>
-                        <input type="text" name="tag_id" class="form-control" required value="{{ old
-                        ('tag_id') }}">
+                        <label for="category">标签分类：</label>
+                        <select required name="tag_id" id="" class="form-control">
+                            @foreach($tags as $key=>$name){
+                            <option value="{{$key}}" {{ (old("tag_id") == $key ? "selected":"") }}>{{$name}}</option>
+                            }
+                            @endforeach
+                        </select>
                     </div>
 
                     <div class="form-group">
                         <label for="content">内容：</label>
-                        <textarea name="text" class="form-control" required rows="3"
-                                  placeholder="注意:多条请以 ||号结尾">{{ old('text')}}</textarea>
+                        <textarea name="text"  id="editor" class="form-control" required rows="3" placeholder="注意:多条请以 ||号结尾">{{ old('text')}}</textarea>
                     </div>
 
                     <button type="submit" class="btn btn-success">发布</button>
@@ -49,4 +52,24 @@
             </div>
         </div>
     </div>
+@stop
+
+@section('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}">
+@stop
+
+@section('scripts')
+    <script type="text/javascript"  src="{{ asset('js/module.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/hotkeys.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/uploader.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/simditor.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            var editor = new Simditor({
+                textarea: $('#editor'),
+            });
+        });
+    </script>
+
 @stop

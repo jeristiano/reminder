@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateNoteRequest;
 use App\Mail\MailDeliver;
 use App\Models\Note;
+use App\Models\Tag;
 use Illuminate\Support\Facades\Auth;
 
 /**
@@ -30,9 +31,9 @@ class HomeController extends Controller
     {
         $user_id = Auth::user()->id;
         $count = Note::where('user_id', $user_id)->count();
-        return view('publish.show', compact('count', 'user_id'));
+        $tags = $this->tagMapping();
+        return view('publish.show', compact('count', 'user_id', 'tags'));
     }
-
 
 
     /**
@@ -43,9 +44,8 @@ class HomeController extends Controller
     {
 
         $textArray = explode('||', $request->text);
-
         foreach ($textArray as $value) {
-            $value = trim($value);
+//            $value = trim($value);
             if ($value) {
                 $note = new Note();
                 $note->user_id = $request->user_id;
@@ -59,9 +59,26 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * @return string
+     * @throws \ReflectionException
+     */
     public function mail ()
     {
-        $mail = Note::with(['tag'])->find([1, 8, 9, 10]);
+        $mail = Note::with(['tag'])
+            ->orderByDesc('id')
+            ->limit(1)
+            ->get();
         return (new MailDeliver($mail))->render();
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function tagMapping ()
+    {
+        return Tag::pluck('name', 'id');
+
     }
 }

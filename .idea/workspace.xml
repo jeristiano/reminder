@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="829ca2e2-4955-4e14-bc39-8bf09b456177" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/editor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/fonticon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/simditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/simditor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/hotkeys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/hotkeys.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/module.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/simditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/simditor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/uploader.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/emails/deliver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/deliver.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/publish/home.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/publish/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +166,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/assets/editor/css" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -165,6 +176,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\reminder\resources\assets\editor\css" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\reminder\resources\assets\editor\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\reminder\resources\views\layouts" />
     </key>
@@ -186,7 +201,8 @@
       <workItem from="1614045154069" duration="6279000" />
       <workItem from="1614065023716" duration="4286000" />
       <workItem from="1614221434649" duration="7260000" />
-      <workItem from="1614562514942" duration="15858000" />
+      <workItem from="1614562514942" duration="16103000" />
+      <workItem from="1614651359997" duration="4972000" />
     </task>
     <servers />
   </component>
@@ -218,13 +234,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="477" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1614581742518" />
-    <state x="663" y="235" width="594" height="570" key="find.popup" timestamp="1614584744613">
+    <state x="663" y="235" width="594" height="570" key="find.popup" timestamp="1614656753979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="235" width="594" height="570" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614584744613" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614568282294">
+    <state x="663" y="235" width="594" height="570" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614656753979" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614656249984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614568282294" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614656249984" />
   </component>
 </project>
