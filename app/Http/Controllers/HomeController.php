@@ -5,8 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateNoteRequest;
 use App\Mail\MailDeliver;
 use App\Models\Note;
+use App\Models\Subscription;
 use App\Models\Tag;
+use Illuminate\Log\Logger;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 /**
  * Class HomeController
@@ -69,7 +73,14 @@ class HomeController extends Controller
             ->orderByDesc('id')
             ->limit(1)
             ->get();
-        return (new MailDeliver($mail))->render();
+
+        $notes = Note::with(['author'])
+            ->orderByRaw("RAND()")
+            ->where('tag_id', 1)
+            ->limit(1)
+            ->get();
+        print_r($notes->pop()->toArray());
+       // return (new MailDeliver($mail))->render();
     }
 
 
@@ -79,6 +90,50 @@ class HomeController extends Controller
     public function tagMapping ()
     {
         return Tag::pluck('name', 'id');
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function subscribe ()
+    {
+        $subscribes = Subscription::where('pushed_time', '=', 1614787200)
+            ->where('hours', 8)
+            ->limit(200)
+            ->get();
+        if (!$subscribes) return [];
+
+        foreach ($subscribes as $subscribe) {
+            $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));
+          //  $this->pushingNoteToQueue($notes);
+            $subscribe->pushed_time = Carbon::today()->addDays(1)->timestamp;
+            $subscribe->save();
+        }
+
+    }
+
+    /**
+     * @param       $user_id
+     * @param array $tags
+     * @return array
+     */
+    public function getUserPushingContents (array $tags)
+    {
+        foreach ($tags as $tag_id) {
+            $notes = Note::with(['author'])
+                ->orderByRaw("RAND()")
+                ->where('tag_id', $tag_id)
+                ->limit(1)
+                ->get();
+            if ($notes->isNotEmpty()) {
+                $response[] = $notes->pop();
+            }
+
+        }
+
+        return $response ?? [];
+
 
     }
 }
