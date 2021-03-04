@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Mail\MailDeliver;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,8 @@ Route::post('publish', [HomeController::class, 'create'])->name('publish.create'
 Route::get('mail', [HomeController::class, 'mail']);
 Route::get('subscribe', [HomeController::class, 'subscribe']);
 
+//预览邮件
+Route::get('preview', [HomeController::class, 'preview']);
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

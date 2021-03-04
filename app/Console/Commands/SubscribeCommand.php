@@ -2,10 +2,13 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\PushingJob;
+use App\Mail\MailDeliver;
 use App\Models\Note;
 use App\Models\Subscription;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Mail;
 
 /**
  * Class SubscribeCommand
@@ -49,17 +52,22 @@ class SubscribeCommand extends Command
      */
     public function subscribe ()
     {
-        $subscribes = Subscription::where('pushed_time', '=', Carbon::today()->timestamp)
-            ->where('hours', Carbon::now()->hour)
+//        $subscribes = Subscription::where('pushed_time', '=', Carbon::today()->timestamp)
+//            ->where('hours', Carbon::now()->hour)
+//            ->limit(200)
+//            ->get();
+        $subscribes = Subscription::with(['author'])
+            ->where('pushed_time', '=', Carbon::today()->timestamp)
+            ->where('hours', 8)
             ->limit(200)
             ->get();
         if ($subscribes->isEmpty()) return 0;
 
         foreach ($subscribes as $subscribe) {
             $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));
-            $this->pushingNoteToQueue($notes);
+            $this->pushingNoteToQueue($notes, $subscribe);
             $subscribe->pushed_time = Carbon::today()->addDays(1)->timestamp;
-            $subscribe->save();
+            // $subscribe->save();
         }
         return $subscribes->count();
     }
@@ -72,7 +80,7 @@ class SubscribeCommand extends Command
     public function getUserPushingContents (array $tags)
     {
         foreach ($tags as $tag_id) {
-            $notes = Note::with(['author'])
+            $notes = Note::with(['tag'])
                 ->orderByRaw("RAND()")
                 ->where('tag_id', $tag_id)
                 ->limit(1)
@@ -90,10 +98,26 @@ class SubscribeCommand extends Command
 
     /**
      * @param $notes
-     * @return array
      */
-    public function pushingNoteToQueue ($notes)
+    public function pushingNoteToQueue ($notes, $subscribe)
     {
-        return [];
+
+        $when = $this->getDelayingTime($subscribe);
+        $message = (new MailDeliver($notes))
+            ->onQueue('emails');
+        Mail::to($subscribe->author->email)
+            ->later($when, $message);
+    }
+
+    /**
+     * @param $subscribe
+     * @return float|int|string
+     */
+    public function getDelayingTime ($subscribe)
+    {
+        $timeString = "$subscribe->hours:$subscribe->minutes";
+        $sendTimeStamp = Carbon::createFromTimeString($timeString)->addDays(1)->timestamp;
+        return $sendTimeStamp - time();
+
     }
 }

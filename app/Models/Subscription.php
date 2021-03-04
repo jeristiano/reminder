@@ -5,6 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Subscription
+ * @package App\Models
+ */
 class Subscription extends Model
 {
     use HasFactory;
@@ -19,5 +23,13 @@ class Subscription extends Model
         'hours',
         'minutes',
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function author ()
+    {
+        return $this->belongsTo(User::class,'user_id','id');
+    }
 
 }

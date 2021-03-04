@@ -79,7 +79,7 @@ class HomeController extends Controller
             ->where('tag_id', 1)
             ->limit(1)
             ->get();
-        print_r($notes->pop()->toArray());
+        dd($notes->pop());
        // return (new MailDeliver($mail))->render();
     }
 
@@ -136,4 +136,26 @@ class HomeController extends Controller
 
 
     }
+
+    /**
+     * @return string
+     * @throws \ReflectionException
+     */
+    public function preview ()
+    {
+//        $mail = Note::with(['tag'])
+//            ->orderByDesc('id')
+//            ->limit(1)
+//            ->get();
+//
+//        $notes = Note::with(['author'])
+//            ->orderByRaw("RAND()")
+//            ->where('tag_id', 1)
+//            ->limit(1)
+//            ->get();
+//        dd($notes->pop());
+         return (new MailDeliver($mail))->render();
+    }
+
+
 }
