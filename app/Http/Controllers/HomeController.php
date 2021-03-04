@@ -12,6 +12,9 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
+//todo 1. 用户提交笔记的预览功能
+//todo 2. 用户维护自己的标签已经订阅取消功能
+
 /**
  * Class HomeController
  * @package App\Http\Controllers
@@ -49,7 +52,6 @@ class HomeController extends Controller
 
         $textArray = explode('||', $request->text);
         foreach ($textArray as $value) {
-//            $value = trim($value);
             if ($value) {
                 $note = new Note();
                 $note->user_id = $request->user_id;
@@ -73,14 +75,7 @@ class HomeController extends Controller
             ->orderByDesc('id')
             ->limit(1)
             ->get();
-
-        $notes = Note::with(['author'])
-            ->orderByRaw("RAND()")
-            ->where('tag_id', 1)
-            ->limit(1)
-            ->get();
-        dd($notes->pop());
-       // return (new MailDeliver($mail))->render();
+        return (new MailDeliver($mail))->render();
     }
 
 

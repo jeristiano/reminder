@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-use App\Jobs\PushingJob;
 use App\Mail\MailDeliver;
 use App\Models\Note;
 use App\Models\Subscription;
@@ -52,22 +51,22 @@ class SubscribeCommand extends Command
      */
     public function subscribe ()
     {
-//        $subscribes = Subscription::where('pushed_time', '=', Carbon::today()->timestamp)
-//            ->where('hours', Carbon::now()->hour)
-//            ->limit(200)
-//            ->get();
         $subscribes = Subscription::with(['author'])
-            ->where('pushed_time', '=', Carbon::today()->timestamp)
-            ->where('hours', 8)
+            ->where('pushed_time', '<', Carbon::today()->timestamp)
             ->limit(200)
             ->get();
+//        $subscribes = Subscription::with(['author'])
+//            ->where('pushed_time', '=', Carbon::today()->timestamp)
+//            ->where('hours', 8)
+//            ->limit(200)
+//            ->get();
         if ($subscribes->isEmpty()) return 0;
 
         foreach ($subscribes as $subscribe) {
             $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));
             $this->pushingNoteToQueue($notes, $subscribe);
             $subscribe->pushed_time = Carbon::today()->addDays(1)->timestamp;
-            // $subscribe->save();
+             $subscribe->save();
         }
         return $subscribes->count();
     }
