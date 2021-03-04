@@ -40,7 +40,8 @@
 
                     <div class="form-group">
                         <label for="content">内容：</label>
-                        <textarea name="text"  id="editor" class="form-control" required rows="3" placeholder="注意:多条请以 ||号结尾">{{ old('text')}}</textarea>
+                        <textarea name="text"  id="editor" class="form-control" required rows="3"
+                                  placeholder="注意:多条请以 ---- 分割">{{ old('text')}}</textarea>
                     </div>
 
                     <button type="submit" class="btn btn-success">发布</button>

@@ -27,7 +27,7 @@ Route::get('/home', function () {
 
 Route::get('publish', [HomeController::class, 'index'])->name('publish');
 Route::post('publish', [HomeController::class, 'create'])->name('publish.create');
-Route::get('mail', [HomeController::class, 'mail']);
+Route::get('mail/{mail}', [HomeController::class, 'mail']);
 Route::get('subscribe', [HomeController::class, 'subscribe']);
 
 //预览邮件

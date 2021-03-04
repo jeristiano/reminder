@@ -7,10 +7,8 @@ use App\Mail\MailDeliver;
 use App\Models\Note;
 use App\Models\Subscription;
 use App\Models\Tag;
-use Illuminate\Log\Logger;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
 
 //todo 1. 用户提交笔记的预览功能
 //todo 2. 用户维护自己的标签已经订阅取消功能
@@ -50,8 +48,9 @@ class HomeController extends Controller
     public function create (CreateNoteRequest $request)
     {
 
-        $textArray = explode('||', $request->text);
+        $textArray = explode("<hr>", $request->text);
         foreach ($textArray as $value) {
+            if (!$value) continue;
             if ($value) {
                 $note = new Note();
                 $note->user_id = $request->user_id;
@@ -69,11 +68,10 @@ class HomeController extends Controller
      * @return string
      * @throws \ReflectionException
      */
-    public function mail ()
+    public function mail ($mail)
     {
         $mail = Note::with(['tag'])
-            ->orderByDesc('id')
-            ->limit(1)
+            ->where('id',$mail)
             ->get();
         return (new MailDeliver($mail))->render();
     }
@@ -101,7 +99,7 @@ class HomeController extends Controller
 
         foreach ($subscribes as $subscribe) {
             $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));
-          //  $this->pushingNoteToQueue($notes);
+            //  $this->pushingNoteToQueue($notes);
             $subscribe->pushed_time = Carbon::today()->addDays(1)->timestamp;
             $subscribe->save();
         }
@@ -149,7 +147,7 @@ class HomeController extends Controller
 //            ->limit(1)
 //            ->get();
 //        dd($notes->pop());
-         return (new MailDeliver($mail))->render();
+        return (new MailDeliver($mail))->render();
     }
 
 

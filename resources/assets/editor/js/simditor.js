@@ -1894,7 +1894,7 @@ Toolbar = (function(superClass) {
       return;
     }
     if (!$.isArray(this.opts.toolbar)) {
-      this.opts.toolbar = ['bold', 'italic', 'underline', 'strikethrough', '|', 'ol', 'ul', 'blockquote', 'code'];
+      this.opts.toolbar = ['hr','bold', 'italic', '|', 'ol', 'ul', 'blockquote', 'code'];
     }
     this._render();
     this.list.on('click', function(e) {
