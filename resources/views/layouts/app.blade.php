@@ -7,19 +7,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} @yield('title', '主页')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="{{ asset('js/app.js') }}" async></script>
+{{--    <script src="{{ asset('js/app.js') }}"></script>--}}
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     @yield('styles')
 </head>
 <body>
@@ -84,7 +83,7 @@
         </main>
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
     @yield('scripts')
 </body>
 </html>

@@ -7,6 +7,7 @@ use App\Models\Note;
 use App\Models\Subscription;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 /**
@@ -44,6 +45,7 @@ class SubscribeCommand extends Command
     {
         $count = $this->subscribe();
         $this->comment('执行完成个数:' . $count);
+        Log::info('发布用户的推送任务执行时间：'.now()->toDayDateTimeString());
     }
 
     /**
@@ -55,11 +57,7 @@ class SubscribeCommand extends Command
             ->where('pushed_time', '<', Carbon::today()->timestamp)
             ->limit(200)
             ->get();
-//        $subscribes = Subscription::with(['author'])
-//            ->where('pushed_time', '=', Carbon::today()->timestamp)
-//            ->where('hours', 8)
-//            ->limit(200)
-//            ->get();
+
         if ($subscribes->isEmpty()) return 0;
 
         foreach ($subscribes as $subscribe) {

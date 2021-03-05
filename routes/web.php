@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TagController;
 use App\Mail\MailDeliver;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,8 @@ Route::get('publish', [HomeController::class, 'index'])->name('publish');
 Route::post('publish', [HomeController::class, 'create'])->name('publish.create');
 Route::get('mail/{mail}', [HomeController::class, 'mail']);
 Route::get('subscribe', [HomeController::class, 'subscribe']);
+
+Route::get('tags', [TagController::class, 'index']);
 
 //预览邮件
 Route::get('preview', [HomeController::class, 'preview']);
