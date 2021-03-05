@@ -10,8 +10,8 @@
     <title>{{ config('app.name', 'Laravel') }} @yield('title', '主页')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" async></script>
-{{--    <script src="{{ asset('js/app.js') }}"></script>--}}
+{{--    <script src="{{ asset('js/app.js') }}" defer></script>--}}
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -35,6 +35,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item {{ active_class(if_route('home')) }}"  ><a
+                                class="nav-link" href="{{url("/") }}">Dashboard</a></li>
+                        <li class="nav-item {{ active_class(if_route('publish')) }}"><a class="nav-link" href="{{ route('publish') }}">发布</a></li>
+                        <li class="nav-item {{ active_class(if_route('/')) }}"><a class="nav-link" href="">订阅</a></li>
+                        <li class="nav-item {{ active_class(if_route('tags')) }}"><a class="nav-link" href="{{ route('tags') }}">标签</a></li>
 
                     </ul>
 
@@ -83,7 +88,7 @@
         </main>
     </div>
     <!-- Scripts -->
-
+    <script src="{{ asset('js/app.js')  }}" async></script>
     @yield('scripts')
 </body>
 </html>

@@ -82,7 +82,7 @@ class HomeController extends Controller
      */
     public function tagMapping ()
     {
-        return Tag::pluck('name', 'id');
+        return Tag::where('user_id',request()->user()->id)->pluck('name', 'id');
 
     }
 
