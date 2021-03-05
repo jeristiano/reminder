@@ -83,6 +83,9 @@ class TagController extends Controller
             return redirect()->route('tags')->with('danger', "标签:【{$tagModel->name}】已经有内容不能删除");
         }
 
-
+        $tagModel->delete();
+        return redirect()->route('tags')->with('success', '删除成功');
     }
+
+
 }
