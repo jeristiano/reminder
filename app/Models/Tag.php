@@ -10,7 +10,14 @@ class Tag extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id',
         'name',
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function note ()
+    {
+        return $this->hasMany(Note::class);
+    }
 }

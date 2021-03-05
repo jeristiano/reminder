@@ -31,7 +31,12 @@ Route::post('publish', [HomeController::class, 'create'])->name('publish.create'
 Route::get('mail/{mail}', [HomeController::class, 'mail']);
 Route::get('subscribe', [HomeController::class, 'subscribe']);
 
-Route::get('tags', [TagController::class, 'index']);
+Route::get('tags', [TagController::class, 'index'])->name('tags');
+Route::get('tags/create', [TagController::class, 'create'])->name('tags.create');
+Route::post('tags/create', [TagController::class, 'create'])->name('tags.create');
+Route::get('tags/{tag}/edit', [TagController::class, 'edit'])->name('tags.edit');;
+Route::get('tags/{tag}/delete', [TagController::class, 'delete'])->name('tags.delete');;
+Route::get('tags/{tag}', [TagController::class, 'show'])->name('tags.show');;
 
 //预览邮件
 Route::get('preview', [HomeController::class, 'preview']);
