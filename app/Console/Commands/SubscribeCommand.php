@@ -58,7 +58,10 @@ class SubscribeCommand extends Command
             ->limit(200)
             ->get();
 
-        if ($subscribes->isEmpty()) return 0;
+        if ($subscribes->isEmpty()){
+//            Log::info('没有任务发布：'.now()->toDayDateTimeString());
+            return 0;
+        }
 
         foreach ($subscribes as $subscribe) {
             $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));

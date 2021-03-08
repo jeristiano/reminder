@@ -2,3 +2,9 @@
 [2021-03-04 15:35:41][1] Processed:  App\Mail\MailDeliver
 [2021-03-05 08:30:01][2] Processing: App\Mail\MailDeliver
 [2021-03-05 08:30:03][2] Processed:  App\Mail\MailDeliver
+[2021-03-07 08:30:02][4] Processing: App\Mail\MailDeliver
+[2021-03-07 08:30:05][4] Processed:  App\Mail\MailDeliver
+Schedule worker started successfully.
+
+Execution #1 output:
+Running scheduled command: '/usr/bin/php7.4' 'artisan' subscribe:run > '/dev/null' 2>&1

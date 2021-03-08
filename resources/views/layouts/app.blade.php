@@ -37,6 +37,8 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item {{ active_class(if_route('home')) }}"  ><a
                                 class="nav-link" href="{{url("/") }}">Dashboard</a></li>
+                        <li class="nav-item {{ active_class(if_route('content')) }}"><a
+                                class="nav-link" href="{{ route('content') }}">内容</a></li>
                         <li class="nav-item {{ active_class(if_route('publish')) }}"><a class="nav-link" href="{{ route('publish') }}">发布</a></li>
                         <li class="nav-item {{ active_class(if_route('/')) }}"><a class="nav-link" href="">订阅</a></li>
                         <li class="nav-item {{ active_class(if_route('tags')) }}"><a class="nav-link" href="{{ route('tags') }}">标签</a></li>
