@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 /**
  * Class Subscription
@@ -42,8 +43,18 @@ class Subscription extends Model
      */
     public function getTagIdsAttribute ($value)
     {
-       return  $this->attributes['tag_ids'] = explode(',', $value);
+        return $this->attributes['tag_ids'] = explode(',', $value);
 
+    }
+
+
+    /**
+     * @param $value
+     * @return string
+     */
+    public function getPushedTimeAttribute ($value)
+    {
+        return $this->attributes['pushed_time'] = Carbon::createFromTimestamp($value)->toDateTimeString();
     }
 
 
