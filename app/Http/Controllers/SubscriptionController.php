@@ -38,7 +38,7 @@ class SubscriptionController extends Controller
         if (request()->method() === 'POST') {
             $validator = Validator::make(request()->all(), [
                 'tag_id' => ['required', 'array'],
-                'hours' => ['required', 'between:0,24'],
+                'hours' => ['required', 'between:0,23'],
                 'minutes' => ['required', 'between:0,59'],
             ]);
 

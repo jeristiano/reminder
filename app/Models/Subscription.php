@@ -24,9 +24,9 @@ class Subscription extends Model
         'minutes',
     ];
 
-    protected $dates = [
-        'pushed_time',
-    ];
+//    protected $dates = [
+//        'pushed_time',
+//    ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -42,8 +42,9 @@ class Subscription extends Model
      */
     public function getTagIdsAttribute ($value)
     {
-        return $this->attributes['tag_ids'] = explode(',', $value);
+       return  $this->attributes['tag_ids'] = explode(',', $value);
 
     }
+
 
 }

@@ -60,8 +60,10 @@ class HomeController extends Controller
             }
         }
         session()->flash('success', '发布成功~');
-        return redirect()->route('content');
+        return redirect()->route('publish');
     }
+
+
 
 
     /**

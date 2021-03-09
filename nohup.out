@@ -5062,3 +5062,221 @@ No scheduled commands are ready to run.
 
 Execution #1685 output:
 No scheduled commands are ready to run.
+
+Execution #1686 output:
+No scheduled commands are ready to run.
+
+Execution #1687 output:
+No scheduled commands are ready to run.
+
+Execution #1688 output:
+No scheduled commands are ready to run.
+
+Execution #1689 output:
+No scheduled commands are ready to run.
+
+Execution #1690 output:
+No scheduled commands are ready to run.
+
+Execution #1691 output:
+No scheduled commands are ready to run.
+
+Execution #1692 output:
+No scheduled commands are ready to run.
+
+Execution #1693 output:
+No scheduled commands are ready to run.
+
+Execution #1694 output:
+No scheduled commands are ready to run.
+
+Execution #1695 output:
+No scheduled commands are ready to run.
+
+Execution #1696 output:
+No scheduled commands are ready to run.
+
+Execution #1697 output:
+No scheduled commands are ready to run.
+
+Execution #1698 output:
+No scheduled commands are ready to run.
+
+Execution #1699 output:
+No scheduled commands are ready to run.
+
+Execution #1700 output:
+No scheduled commands are ready to run.
+
+Execution #1701 output:
+No scheduled commands are ready to run.
+
+Execution #1702 output:
+No scheduled commands are ready to run.
+
+Execution #1703 output:
+No scheduled commands are ready to run.
+
+Execution #1704 output:
+No scheduled commands are ready to run.
+
+Execution #1705 output:
+No scheduled commands are ready to run.
+
+Execution #1706 output:
+No scheduled commands are ready to run.
+
+Execution #1707 output:
+No scheduled commands are ready to run.
+
+Execution #1708 output:
+No scheduled commands are ready to run.
+
+Execution #1709 output:
+No scheduled commands are ready to run.
+
+Execution #1710 output:
+ParseError 
+
+  syntax error, unexpected '$subscribes' (T_VARIABLE)
+
+  at app/Console/Commands/SubscribeCommand.php:58
+     54▕     public function subscribe ()
+     55▕     {
+     56▕ 
+     57▕         Carbon::now()->hour
+  ➜  58▕         $subscribes = Subscription::with(['author'])
+     59▕ //            ->where('pushed_time', '<', Carbon::today()->timestamp)
+     60▕             ->limit(200)
+     61▕             ->get();
+     62▕
+
+      [2m+1 vendor frames [22m
+  2   [internal]:0
+      Composer\Autoload\ClassLoader::loadClass()
+
+  3   [internal]:0
+      spl_autoload_call()
+
+Execution #1711 output:
+Running scheduled command: '/usr/bin/php7.4' 'artisan' subscribe:run > '/dev/null' 2>&1
+
+Execution #1712 output:
+No scheduled commands are ready to run.
+
+Execution #1713 output:
+No scheduled commands are ready to run.
+
+Execution #1714 output:
+No scheduled commands are ready to run.
+
+Execution #1715 output:
+No scheduled commands are ready to run.
+
+Execution #1716 output:
+No scheduled commands are ready to run.
+
+Execution #1717 output:
+No scheduled commands are ready to run.
+
+Execution #1718 output:
+No scheduled commands are ready to run.
+
+Execution #1719 output:
+No scheduled commands are ready to run.
+
+Execution #1720 output:
+No scheduled commands are ready to run.
+
+Execution #1721 output:
+No scheduled commands are ready to run.
+
+Execution #1722 output:
+No scheduled commands are ready to run.
+
+Execution #1723 output:
+No scheduled commands are ready to run.
+
+Execution #1724 output:
+No scheduled commands are ready to run.
+
+Execution #1725 output:
+No scheduled commands are ready to run.
+
+Execution #1726 output:
+No scheduled commands are ready to run.
+
+Execution #1727 output:
+No scheduled commands are ready to run.
+
+Execution #1728 output:
+No scheduled commands are ready to run.
+
+Execution #1729 output:
+No scheduled commands are ready to run.
+
+Execution #1730 output:
+No scheduled commands are ready to run.
+
+Execution #1731 output:
+No scheduled commands are ready to run.
+
+Execution #1732 output:
+No scheduled commands are ready to run.
+
+Execution #1733 output:
+No scheduled commands are ready to run.
+
+Execution #1734 output:
+No scheduled commands are ready to run.
+
+Execution #1735 output:
+No scheduled commands are ready to run.
+
+Execution #1736 output:
+No scheduled commands are ready to run.
+
+Execution #1737 output:
+No scheduled commands are ready to run.
+
+Execution #1738 output:
+No scheduled commands are ready to run.
+
+Execution #1739 output:
+No scheduled commands are ready to run.
+
+Execution #1740 output:
+No scheduled commands are ready to run.
+
+Execution #1741 output:
+Running scheduled command: '/usr/bin/php7.4' 'artisan' subscribe:run > '/dev/null' 2>&1
+
+Execution #1742 output:
+No scheduled commands are ready to run.
+
+Execution #1743 output:
+No scheduled commands are ready to run.
+
+Execution #1744 output:
+No scheduled commands are ready to run.
+
+Execution #1745 output:
+No scheduled commands are ready to run.
+
+Execution #1746 output:
+No scheduled commands are ready to run.
+
+Execution #1747 output:
+No scheduled commands are ready to run.
+
+Execution #1748 output:
+No scheduled commands are ready to run.
+
+Execution #1749 output:
+No scheduled commands are ready to run.
+
+Execution #1750 output:
+No scheduled commands are ready to run.
+
+Execution #1751 output:
+No scheduled commands are ready to run.

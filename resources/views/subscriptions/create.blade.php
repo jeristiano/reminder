@@ -33,7 +33,8 @@
 
                             <div class="form-group">
                                 <label for="author">推送时间(小时)：</label>
-                                <input type="text" name="hours" class="form-control" required placeholder="0~24" value="{{ old('hours') }}">
+                                <input type="text" name="hours" class="form-control" required
+                                       placeholder="0~23" value="{{ old('hours') }}">
                             </div>
                             <div class="form-group">
                                 <label for="author">推送时间(分钟)：</label>

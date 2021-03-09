@@ -2,83 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="829ca2e2-4955-4e14-bc39-8bf09b456177" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ContentUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/bootstrap-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-am_ET.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-ar_AR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-bg_BG.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-cs_CZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-da_DK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-de_DE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-en_US.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-es_CL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-es_ES.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-et_EE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-fa_IR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-fi_FI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-fr_FR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-hr_HR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-hu_HU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-id_ID.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-it_IT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-ja_JP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-kh_KM.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-ko_KR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-lt_LT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-lv_LV.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-nb_NO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-nl_NL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-pl_PL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-pt_BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-pt_PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-ro_RO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-ru_RU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-sk_SK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-sl_SI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-sr_SP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-sv_SE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-th_TH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-tr_TR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-ua_UA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-vi_VN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/i18n/defaults-zh_TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/umd-intro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/bootstrap-select/js/umd-outro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/content/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/subscriptions/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/subscriptions/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/reminder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/reminder.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateNoteRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateNoteRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Subscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Subscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_03_060358_create_subscriptions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_03_060358_create_subscriptions_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/_topic_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/_topic_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/publish/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tags/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tags/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/subscriptions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subscriptions/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +198,7 @@
       <workItem from="1614221434649" duration="7260000" />
       <workItem from="1614562514942" duration="16103000" />
       <workItem from="1614651359997" duration="22872000" />
-      <workItem from="1614837215947" duration="67027000" />
+      <workItem from="1614837215947" duration="70885000" />
     </task>
     <servers />
   </component>
@@ -295,10 +226,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614064962167" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1615270834248">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1615277023989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1615270834248" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1615277023989" />
     <state x="477" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614581742518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

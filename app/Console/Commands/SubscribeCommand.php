@@ -45,7 +45,7 @@ class SubscribeCommand extends Command
     {
         $count = $this->subscribe();
         $this->comment('执行完成个数:' . $count);
-        Log::info('发布用户的推送任务执行时间：'.now()->toDayDateTimeString());
+        Log::info('发布用户的推送任务执行时间：' . now()->toDayDateTimeString());
     }
 
     /**
@@ -53,21 +53,25 @@ class SubscribeCommand extends Command
      */
     public function subscribe ()
     {
+
         $subscribes = Subscription::with(['author'])
             ->where('pushed_time', '<', Carbon::today()->timestamp)
+            ->where('hours', '<=', $this->getQueryTime())
             ->limit(200)
             ->get();
 
-        if ($subscribes->isEmpty()){
+
+        if ($subscribes->isEmpty()) {
 //            Log::info('没有任务发布：'.now()->toDayDateTimeString());
             return 0;
         }
 
         foreach ($subscribes as $subscribe) {
-            $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));
+            $notes = $this->getUserPushingContents($subscribe->tag_ids);
             $this->pushingNoteToQueue($notes, $subscribe);
-            $subscribe->pushed_time = Carbon::today()->addDays(1)->timestamp;
-             $subscribe->save();
+            $subscribe->refresh();
+            $subscribe->pushed_time = time();
+            $subscribe->save();
         }
         return $subscribes->count();
     }
@@ -107,6 +111,11 @@ class SubscribeCommand extends Command
             ->onQueue('emails');
         Mail::to($subscribe->author->email)
             ->later($when, $message);
+    }
+
+    private function getQueryTime ($durationTime = 1)
+    {
+        return Carbon::now()->hour + $durationTime < 23 ? Carbon::now()->hour + $durationTime : 0;
     }
 
     /**
