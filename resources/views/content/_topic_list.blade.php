@@ -2,41 +2,41 @@
     <ul class="list-unstyled">
         @foreach ($contents as $content)
             <li class="media">
-{{--                <div class="media-left">--}}
-{{--                    <a href="{{ route('users.show', [$content->user_id]) }}">--}}
-{{--                        <img class="media-object img-thumbnail mr-3" style="width: 52px; height: 52px;" src="{{ $content->user->avatar }}" title="{{ $content->user->name }}">--}}
-{{--                    </a>--}}
-{{--                </div>--}}
 
                 <div class="media-body">
-{{--                    {{ route('content.show', [$content->id]) }}" title="{{$content->title }}--}}
-                    <div class="media-heading mt-0 mb-1">
-                        <a href="">
-                            {{ $content->title }}
+                    <div class="media-heading mt-0 mb-1 ">
+                        <a href="{{route('preview', ['id'=>$content->id]) }}" target="_blank"
+                           title="预览邮件：{{$content->title }}" style="font-size:16px;color:  #58b06d; !important">
+                        {{$content->title}}
                         </a>
-{{--                        {{ route('topics.show', [$content->id]) }}--}}
-                        <a class="float-right" href="">
-{{--                            <span class="badge badge-secondary badge-pill"> {{ $content->reply_count }} </span>--}}
-                        </a>
+                    </div>
+
+                    <div class="media-body" style="margin:6px;" >
+                            {!! $content->text !!}
                     </div>
 
                     <small class="media-body meta text-secondary">
 
-                        <a class="text-secondary" href="#" title="{{ $content->tag->name }}">
+                        <a class="text-secondary" href="{{route('content',
+                        ['tag'=>$content->tag->id])}}"
+                           title="{{ $content->tag->name }}">
                             <i class="far fa-folder"></i>
                             {{ $content->tag->name }}
-                        </a>
-
-                        <span> • </span>
-
-{{--                        {{ route('users.show', [$content->user_id]) }}" title="{{ $content->user->name }}--}}
-                        <a class="text-secondary" href="">
-                            <i class="far fa-user"></i>
-{{--                            {{ $content->user->name }}--}}
                         </a>
                         <span> • </span>
                         <i class="far fa-clock"></i>
                         <span class="timeago">{{ $content->updated_at->diffForHumans() }}</span>
+                        <span> • </span>
+
+                        <a href="{{ route('content.edit', [$content->id])  }}"
+                           class="text-secondary"> <i class="far fa-edit"></i>
+                            编辑
+                        </a>
+                        <span> • </span>
+                        <a href="{{ route('content.delete', [$content->id])  }}"
+                           class="text-secondary"> <i class="fa fa-trash"></i>
+                            删除
+                        </a>
                     </small>
 
                 </div>

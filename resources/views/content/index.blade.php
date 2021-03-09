@@ -13,9 +13,8 @@
                     </div>
 
                     <div class="card-body">
-{{--                        话题列表--}}
+                        @include('layouts._message')
                         @include('content._topic_list', ['contents' => $contents])
-{{--                        分页--}}
                         <div class="mt-5">
                             {!! $contents->appends(Request::except('page'))->render() !!}
                         </div>

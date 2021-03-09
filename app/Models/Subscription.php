@@ -24,12 +24,26 @@ class Subscription extends Model
         'minutes',
     ];
 
+    protected $dates = [
+        'pushed_time',
+    ];
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function author ()
     {
-        return $this->belongsTo(User::class,'user_id','id');
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+
+    /**
+     * @param $value
+     */
+    public function getTagIdsAttribute ($value)
+    {
+        return $this->attributes['tag_ids'] = explode(',', $value);
+
     }
 
 }

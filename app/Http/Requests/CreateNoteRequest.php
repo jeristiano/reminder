@@ -16,6 +16,7 @@ class CreateNoteRequest extends FormRequest
      */
     public function authorize ()
     {
+
         return (int)request()->user_id === $this->user()->id;
     }
 

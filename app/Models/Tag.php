@@ -20,4 +20,14 @@ class Tag extends Model
     {
         return $this->hasMany(Note::class);
     }
+
+    /**
+     * @return mixed
+     */
+    public static function getTotalTags ($user_id,$limit=50)
+    {
+        return self::where('user_id',$user_id)
+            ->limit($limit)
+            ->pluck('name','id');
+    }
 }

@@ -40,8 +40,8 @@
                         <li class="nav-item {{ active_class(if_route('content')) }}"><a
                                 class="nav-link" href="{{ route('content') }}">内容</a></li>
                         <li class="nav-item {{ active_class(if_route('publish')) }}"><a class="nav-link" href="{{ route('publish') }}">发布</a></li>
-                        <li class="nav-item {{ active_class(if_route('/')) }}"><a class="nav-link" href="">订阅</a></li>
-                        <li class="nav-item {{ active_class(if_route('tags')) }}"><a class="nav-link" href="{{ route('tags') }}">标签</a></li>
+                        <li class="nav-item {{ active_class(if_route('subscriptions')) }}"><a class="nav-link" href="{{route('subscriptions')}}">订阅</a></li>
+                        <li class="nav-item {{ active_class(if_route('tags')) }}"><a  class="nav-link" href="{{ route('tags') }}">标签</a></li>
 
                     </ul>
 
@@ -85,12 +85,11 @@
         </nav>
 
         <main class="py-4">
-
             @yield('content')
         </main>
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js')  }}" async></script>
+    <script src="{{ asset('js/app.js')  }}"></script>
     @yield('scripts')
 </body>
 </html>

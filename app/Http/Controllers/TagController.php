@@ -35,20 +35,18 @@ class TagController extends Controller
     }
 
 
-    /**
-     */
-    public function show ()
-    {
-
-
-        return view('tags.show', compact('tags'));
-    }
+//    /**
+//     */
+//    public function show ()
+//    {
+//        $tags = $this->getTotalTags();
+//        return view('tags.index', compact('tags'));
+//    }
 
     /**
      */
     public function create ()
     {
-
         if (request()->method() == 'POST') {
 
             $validator = Validator::make(request()->all(), [

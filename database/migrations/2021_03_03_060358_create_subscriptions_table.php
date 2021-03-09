@@ -20,10 +20,9 @@ class CreateSubscriptionsTable extends Migration
             $table->integer('user_id');
             $table->integer('hours')->default(0);
             $table->integer('minutes')->default(0);
-            $table->string('tag_ids')->comment('推送的标签id');
+            $table->string('tag_ids')->default('0')->comment('推送的标签id');
             $table->integer('pushed_time')->default(0)->comment('任务执行日期');
             $table->timestamps();
-            $table->unique('user_id');
         });
     }
 

@@ -12,6 +12,9 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
+@import "~bootstrap-select/sass/bootstrap-select";
+@import "~bootstrap-select/sass/variables";
+
 body {
     font-size: 14px;
     font-weight: normal;
@@ -20,6 +23,8 @@ body {
 nav.navbar.navbar-expand-lg {
     margin-bottom: 25px;
 }
+
+
 /* Add container and footer space */
 #app > div.container {
     margin-bottom: 100px;

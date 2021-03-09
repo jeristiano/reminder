@@ -13,5 +13,9 @@
     "/css/editor.scss": "/css/editor.scss",
     "/css/fonticon.scss": "/css/fonticon.scss",
     "/css/simditor.css": "/css/simditor.css",
-    "/css/simditor.scss": "/css/simditor.scss"
+    "/css/simditor.scss": "/css/simditor.scss",
+    "/js/.eslintrc.json": "/js/.eslintrc.json",
+    "/js/bootstrap-select.js": "/js/bootstrap-select.js",
+    "/js/umd-intro.js": "/js/umd-intro.js",
+    "/js/umd-outro.js": "/js/umd-outro.js"
 }

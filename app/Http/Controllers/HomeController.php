@@ -10,7 +10,6 @@ use App\Models\Tag;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 
-//todo 1. 用户提交笔记的预览功能
 //todo 2. 用户维护自己的标签已经订阅取消功能
 
 /**
@@ -61,19 +60,7 @@ class HomeController extends Controller
             }
         }
         session()->flash('success', '发布成功~');
-        return redirect()->back();
-    }
-
-    /**
-     * @return string
-     * @throws \ReflectionException
-     */
-    public function mail ($mail)
-    {
-        $mail = Note::with(['tag'])
-            ->where('id',$mail)
-            ->get();
-        return (new MailDeliver($mail))->render();
+        return redirect()->route('content');
     }
 
 
@@ -82,27 +69,7 @@ class HomeController extends Controller
      */
     public function tagMapping ()
     {
-        return Tag::where('user_id',request()->user()->id)->pluck('name', 'id');
-
-    }
-
-    /**
-     * @return mixed
-     */
-    public function subscribe ()
-    {
-        $subscribes = Subscription::where('pushed_time', '=', 1614787200)
-            ->where('hours', 8)
-            ->limit(200)
-            ->get();
-        if (!$subscribes) return [];
-
-        foreach ($subscribes as $subscribe) {
-            $notes = $this->getUserPushingContents(explode(',', $subscribe->tag_ids));
-            //  $this->pushingNoteToQueue($notes);
-            $subscribe->pushed_time = Carbon::today()->addDays(1)->timestamp;
-            $subscribe->save();
-        }
+        return Tag::where('user_id', request()->user()->id)->pluck('name', 'id');
 
     }
 
@@ -130,23 +97,23 @@ class HomeController extends Controller
 
     }
 
+
+
+
     /**
      * @return string
-     * @throws \ReflectionException
      */
     public function preview ()
     {
-//        $mail = Note::with(['tag'])
-//            ->orderByDesc('id')
-//            ->limit(1)
-//            ->get();
-//
-//        $notes = Note::with(['author'])
-//            ->orderByRaw("RAND()")
-//            ->where('tag_id', 1)
-//            ->limit(1)
-//            ->get();
-//        dd($notes->pop());
+        $mail = Note::with(['tag'])
+            ->where('id', request()->id)
+            ->where('user_id',request()->user()->id)
+            ->get();
+
+        if($mail->isEmpty()){
+            abort(404);
+        }
+
         return (new MailDeliver($mail))->render();
     }
 

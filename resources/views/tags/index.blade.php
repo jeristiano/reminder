@@ -11,8 +11,7 @@
                         <h5>我的标签</h5>
                     </div>
                     <div class="card-body table-responsive ">
-                        <a class="btn btn-sm btn-success" href="{{ route('tags.create') }}"
-                           role="button">创建</a>
+                        <a class="btn btn-sm btn-success" href="{{ route('tags.create') }}" role="button">创建</a>
                     </div>
 
                     <div class="card-body table-responsive ">
@@ -21,7 +20,7 @@
                         <table class="table table-striped">
                             <!-- On rows -->
                             <tr>
-                                <th>便签名</th>
+                                <th>标签</th>
                                 <th>内容数</th>
                                 <th>创建时间</th>
                                 <th>修改</th>
@@ -29,7 +28,7 @@
                             @foreach($tags as $tag)
                                 <tr>
                                     <td>
-                                        <a  href="{{ route('tags.show',['tag'=>1])}}">{{$tag->name}}</a>
+                                        <a  href="{{ route('content',['tag'=>1])  }}">{{$tag->name}}</a>
                                     </td>
                                     <td>{{$tag->note->count()}}</td>
                                     <td>{{$tag->created_at}}</td>
