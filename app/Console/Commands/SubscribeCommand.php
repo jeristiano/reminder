@@ -125,8 +125,8 @@ class SubscribeCommand extends Command
     public function getDelayingTime ($subscribe)
     {
         $timeString = "$subscribe->hours:$subscribe->minutes";
-        $sendTimeStamp = Carbon::createFromTimeString($timeString)->addDays(1)->timestamp;
-        return $sendTimeStamp - time();
+        $sendTimeStamp = Carbon::createFromTimeString($timeString)->timestamp;
+        return ($sendTimeStamp - time()) > 0 ? $sendTimeStamp - time() : 30;
 
     }
 }

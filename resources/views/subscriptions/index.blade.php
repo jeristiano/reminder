@@ -41,8 +41,8 @@
                                     <td>{{$sub->created_at}}</td>
                                     <td>{{$sub->updated_at}}</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="{{ route('subscriptions.edit', ['sub'=>$sub->id]) }}">修改</a>
-                                        <a class="btn btn-danger btn-sm" href="{{ route('subscriptions.delete',['sub'=>$sub->id]) }}">删除</a>
+                                        <a class="btn btn-primary btn-sm" href="{{ route('subscriptions.edit', $sub->id) }}">修改</a>
+                                        <a class="btn btn-danger btn-sm" href="{{ route('subscriptions.delete',$sub->id) }}">删除</a>
 
                                     </td>
                                 </tr>

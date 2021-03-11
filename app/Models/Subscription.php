@@ -43,6 +43,9 @@ class Subscription extends Model
      */
     public function getTagIdsAttribute ($value)
     {
+        if (is_array($value)) {
+            return $value;
+        }
         return $this->attributes['tag_ids'] = explode(',', $value);
 
     }

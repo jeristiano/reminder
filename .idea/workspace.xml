@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="829ca2e2-4955-4e14-bc39-8bf09b456177" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/subscriptions/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Subscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Subscription.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/subscriptions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subscriptions/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +203,7 @@
       <workItem from="1614221434649" duration="7260000" />
       <workItem from="1614562514942" duration="16103000" />
       <workItem from="1614651359997" duration="22872000" />
-      <workItem from="1614837215947" duration="71050000" />
+      <workItem from="1614837215947" duration="83015000" />
     </task>
     <servers />
   </component>
@@ -214,18 +223,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="533" y="254" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614826432375" />
-    <state x="1087" y="524" key="NewPhpFileDialog" timestamp="1615267676121">
+    <state x="1087" y="524" key="NewPhpFileDialog" timestamp="1615426401107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1087" y="524" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615267676121" />
+    <state x="1087" y="524" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615426401107" />
     <state x="453" y="164" key="SettingsEditor" timestamp="1614064962167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614064962167" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1615279261094">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1615444844602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1615279261094" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1615444844602" />
     <state x="477" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614581742518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -238,9 +247,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614909430604" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615274055795">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615444864588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615274055795" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615444864588" />
   </component>
 </project>

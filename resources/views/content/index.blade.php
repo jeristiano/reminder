@@ -19,6 +19,9 @@
                             {!! $contents->appends(Request::except('page'))->render() !!}
                         </div>
                     </div>
+                    <div class="card-footer">
+                        <h6>当前便签共有笔记：{{$total}} 个！</h6>
+                    </div>
                 </div>
 
 

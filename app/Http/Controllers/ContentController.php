@@ -34,9 +34,15 @@ class ContentController extends Controller
             ->when(request()->tag, function ($query, $tag_id) {
                 return $query->where('tag_id', $tag_id);
             })
-            ->paginate(10);
+            ->paginate(5);
 
-        return view('content.index', compact('contents'));
+        $total = Note::with('tag')
+            ->where('user_id', request()->user()->id)
+            ->when(request()->tag, function ($query, $tag_id) {
+                return $query->where('tag_id', $tag_id);
+            })->count();
+
+        return view('content.index', compact('contents', 'total'));
     }
 
     /**
