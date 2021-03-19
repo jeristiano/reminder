@@ -149,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -159,7 +159,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app\Models" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public\images" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\images" />
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views" />
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\layouts" />
     </key>
@@ -188,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615514750737</updated>
       <workItem from="1615514751831" duration="15713000" />
-      <workItem from="1615788757653" duration="32156000" />
+      <workItem from="1615788757653" duration="57744000" />
     </task>
     <servers />
   </component>
@@ -204,33 +210,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615858831417" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616029970153">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616133724318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616029970153" />
-    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1615866461773">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616133724318" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616117459485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615866461773" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616117459485" />
+    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1616119048918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616119048918" />
     <state x="453" y="164" key="SettingsEditor" timestamp="1615778627543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1616036600826">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1616136370087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616036600826" />
-    <state x="663" y="222" width="648" height="596" key="find.popup" timestamp="1615865805259">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616136370087" />
+    <state x="663" y="222" width="707" height="596" key="find.popup" timestamp="1616135660519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="222" width="648" height="596" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865805259" />
+    <state x="663" y="222" width="707" height="596" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616135660519" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1615865709344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865709344" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616036668142">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616133451376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616036668142" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616133451376" />
   </component>
 </project>

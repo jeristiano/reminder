@@ -1,16 +1,15 @@
 <div>
     <nav class="bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <div class="flex-shrink-0">
-{{--                        <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">--}}
+                    <div class="flex-shrink-0 " >
                         <a href="{{ route('dashboard') }}">
-                            <x-jet-application-mark class="block h-9 w-auto" />
+                            <x-jet-application-mark class="h-8 w-8" />
                         </a>
                     </div>
                     <div class="hidden md:block">
-                        <div class="ml-10 flex items-baseline space-x-4">
+                        <div class="ml-20 flex items-baseline space-x-4">
                             <x-jet-nav-link href="{{route('dashboard') }}" :active="request()->routeIs('dashboard')">
                                 {{ __('dashboard.homepage') }}
 
@@ -30,9 +29,8 @@
                             </x-jet-nav-link>
                         </div>
                     </div>
-                </div>s
-
-                <div class="hidden sm:-my-px sm:ml-80 sm:flex items-center justify-end space-x-8">
+                </div>
+                <div class="hidden sm:-my-px sm:ml-80 sm:flex items-center justify-end space-x-6">
                     <x-jet-input placeholder="{{__('dashboard.search')}}" class="text-sm text-gray-600 lg:px-4 h-7 borderborder-transparent focus:outline-none"/>
 
                 </div>

@@ -1,17 +1,16 @@
 <div>
     <nav class="bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <div class="flex-shrink-0">
-
+                    <div class="flex-shrink-0 " >
                         <a href="<?php echo e(route('dashboard')); ?>">
                             <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
-<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'jetstream::components.application-mark','data' => ['class' => 'block h-9 w-auto']]); ?>
+<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'jetstream::components.application-mark','data' => ['class' => 'h-8 w-8']]); ?>
 <?php $component->withName('jet-application-mark'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php $component->withAttributes(['class' => 'block h-9 w-auto']); ?>
+<?php $component->withAttributes(['class' => 'h-8 w-8']); ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
@@ -21,7 +20,7 @@
                         </a>
                     </div>
                     <div class="hidden md:block">
-                        <div class="ml-10 flex items-baseline space-x-4">
+                        <div class="ml-20 flex items-baseline space-x-4">
                             <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'jetstream::components.nav-link','data' => ['href' => ''.e(route('dashboard')).'','active' => request()->routeIs('dashboard')]]); ?>
 <?php $component->withName('jet-nav-link'); ?>
@@ -96,9 +95,8 @@
 <?php endif; ?>
                         </div>
                     </div>
-                </div>s
-
-                <div class="hidden sm:-my-px sm:ml-80 sm:flex items-center justify-end space-x-8">
+                </div>
+                <div class="hidden sm:-my-px sm:ml-80 sm:flex items-center justify-end space-x-6">
                     <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'jetstream::components.input','data' => ['placeholder' => ''.e(__('dashboard.search')).'','class' => 'text-sm text-gray-600 lg:px-4 h-7 borderborder-transparent focus:outline-none']]); ?>
 <?php $component->withName('jet-input'); ?>

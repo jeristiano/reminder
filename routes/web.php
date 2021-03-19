@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContentController;
 use App\Http\Controllers\TestController;
 use App\Http\Livewire\Counter;
 use Illuminate\Support\Facades\Route;
