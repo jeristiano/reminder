@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\SubscriptionController;
 use App\Http\Livewire\Counter;
 use Illuminate\Support\Facades\Route;
 
@@ -40,7 +43,7 @@ Route::get('subscribe', [HomeController::class, 'subscribe']);
 Route::get('content/{tag?}', [ContentController::class, 'index'])->name('content');
 Route::get('content/{id}/edit', [ContentController::class, 'edit'])->name('content.edit');
 Route::put('content/{id}', [ContentController::class, 'update'])->name('content.update');
-Route::get('content/{id}', [ContentController::class, 'delete'])->name('content.delete');
+Route::get('content/delete/{id}', [ContentController::class, 'delete'])->name('content.delete');
 
 
 

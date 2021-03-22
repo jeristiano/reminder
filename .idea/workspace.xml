@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="" />
+    <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ContentUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateNoteRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/MailDeliver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/message_svg.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/deliver.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/subcopy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/validation-errors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/validation-errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c4fd4c24ccfa1887c74eefdc635d6b1d6e270b90.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c4fd4c24ccfa1887c74eefdc635d6b1d6e270b90.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ccdb2805ce105cd803da3d9029bf9e1b9b2226a9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ccdb2805ce105cd803da3d9029bf9e1b9b2226a9.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +53,9 @@
     <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -149,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -159,15 +198,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\vendor" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app\Http" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app\Http\Controllers" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app\Models" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public\images" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\images" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.views">
@@ -194,7 +233,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615514750737</updated>
       <workItem from="1615514751831" duration="15713000" />
-      <workItem from="1615788757653" duration="57744000" />
+      <workItem from="1615788757653" duration="58788000" />
+      <workItem from="1616391772771" duration="8641000" />
     </task>
     <servers />
   </component>
@@ -214,33 +254,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616133724318" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616117459485">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616395971320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616117459485" />
-    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1616119048918">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616395971320" />
+    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1616398836948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616119048918" />
+    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616398836948" />
     <state x="453" y="164" key="SettingsEditor" timestamp="1615778627543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1616136370087">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1616400149802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616136370087" />
-    <state x="663" y="222" width="707" height="596" key="find.popup" timestamp="1616135660519">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616400149802" />
+    <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616399365105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="222" width="707" height="596" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616135660519" />
+    <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616399365105" />
+    <state x="663" y="222" width="707" height="628" key="find.popup" timestamp="1616398734828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="222" width="707" height="628" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616398734828" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1615865709344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865709344" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616133451376">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616394883876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616133451376" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616394883876" />
   </component>
 </project>

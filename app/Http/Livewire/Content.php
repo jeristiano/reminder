@@ -33,10 +33,11 @@ class Content extends Component
      */
     public function render ()
     {
+
         $contents = Note::with('tag')
             ->orderByDesc('created_at')
             ->where('user_id', request()->user()->id)
-            ->when($this->tag->id, function ($query, $tag_id) {
+            ->when($this->tag, function ($query, $tag_id) {
                 return $query->where('tag_id', $tag_id);
             })
             ->paginate(5);

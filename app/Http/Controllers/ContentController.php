@@ -33,8 +33,13 @@ class ContentController extends Controller
                 return $query->where('tag_id', $tag_id);
             })->count();
 
-        $tag=  Tag::where('id', request()->tag)->first();
-        return view('content.index', compact( 'total','tag'));
+        $tagModel=Tag::where('user_id', request()->user()->id)
+            ->when(request()->tag, function ($query, $tag_id) {
+                return $query->where('id', $tag_id);
+            })->first();
+
+       $tag= request()->tag??null;
+        return view('content.index', compact('total','tag','tagModel'));
     }
 
     /**
@@ -43,7 +48,7 @@ class ContentController extends Controller
     {
         $content = Note::find(request()->id);
         if (!$content) {
-            return redirect()->route('content')->with('danger', '不存在的条目');
+            return redirect()->route('content')->with('Error', '不存在的条目');
         }
 
         if ($content->user_id != Auth::user()->id) {
@@ -64,7 +69,7 @@ class ContentController extends Controller
     {
         $content = Note::find($request->id);
         if (!$content) {
-            return redirect()->route('content.edit')->with('danger', '不存在的条目');
+            return redirect()->route('content.edit')->with('Error', '不存在的条目');
         }
 
         if ($content->user_id != $request->user()->id) {
@@ -74,7 +79,7 @@ class ContentController extends Controller
         $content->text = $request->text;
         $content->tag_id = $request->tag_id;
         $content->save();
-        return redirect()->route('content')->with('success', '修改成功');
+        return redirect()->route('content')->with('Success', '修改成功');
     }
 
 
@@ -85,14 +90,14 @@ class ContentController extends Controller
     {
         $content = Note::find(request()->id);
         if (!$content) {
-            return redirect()->route('content')->with('danger', '不存在的条目');
+            return redirect()->route('content')->with('Error', '不存在的条目');
         }
 
         if ($content->user_id != request()->user()->id) {
             abort(403);
         }
         $content->delete();
-        return redirect()->route('content')->with('success', '删除成功');
+        return redirect()->route('content')->with('Success', '删除成功');
 
     }
 
