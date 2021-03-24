@@ -11,12 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js(['resources/js/app.js', './node_modules/jquery/dist/jquery.js'], 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),
-    ]);
+
+    ])
+    .copyDirectory('resources/assets/editor/js', 'public/js')
+    .copyDirectory('resources/assets/editor/css', 'public/css')
+    .sourceMaps();
 
 if (mix.inProduction()) {
     mix.version();

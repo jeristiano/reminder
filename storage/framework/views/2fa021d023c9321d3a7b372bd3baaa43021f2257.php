@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+    <?php echo $__env->yieldContent('styles'); ?>
         <!-- Styles -->
         <link rel="stylesheet" href="<?php echo e(mix('css/app.css')); ?>">
 
@@ -38,15 +38,15 @@
             <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('navigation-menu')->html();
-} elseif ($_instance->childHasBeenRendered('XxIvtkl')) {
-    $componentId = $_instance->getRenderedChildComponentId('XxIvtkl');
-    $componentTag = $_instance->getRenderedChildComponentTagName('XxIvtkl');
+} elseif ($_instance->childHasBeenRendered('cszcQib')) {
+    $componentId = $_instance->getRenderedChildComponentId('cszcQib');
+    $componentTag = $_instance->getRenderedChildComponentTagName('cszcQib');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('XxIvtkl');
+    $_instance->preserveRenderedChild('cszcQib');
 } else {
     $response = \Livewire\Livewire::mount('navigation-menu');
     $html = $response->html();
-    $_instance->logRenderedChild('XxIvtkl', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('cszcQib', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -71,21 +71,21 @@ echo $html;
             <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('footer', [])->html();
-} elseif ($_instance->childHasBeenRendered('oBRmfIg')) {
-    $componentId = $_instance->getRenderedChildComponentId('oBRmfIg');
-    $componentTag = $_instance->getRenderedChildComponentTagName('oBRmfIg');
+} elseif ($_instance->childHasBeenRendered('0mspUQj')) {
+    $componentId = $_instance->getRenderedChildComponentId('0mspUQj');
+    $componentTag = $_instance->getRenderedChildComponentTagName('0mspUQj');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('oBRmfIg');
+    $_instance->preserveRenderedChild('0mspUQj');
 } else {
     $response = \Livewire\Livewire::mount('footer', []);
     $html = $response->html();
-    $_instance->logRenderedChild('oBRmfIg', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('0mspUQj', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
         <?php endif; ?>
         <?php echo $__env->yieldPushContent('modals'); ?>
-
+        <?php echo $__env->yieldContent('scripts'); ?>
         <?php echo \Livewire\Livewire::scripts(); ?>
 
     </body>

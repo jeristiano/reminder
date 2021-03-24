@@ -33,13 +33,14 @@ class ContentController extends Controller
                 return $query->where('tag_id', $tag_id);
             })->count();
 
-        $tagModel=Tag::where('user_id', request()->user()->id)
+        $tagModel = Tag::where('user_id', request()->user()->id)
             ->when(request()->tag, function ($query, $tag_id) {
                 return $query->where('id', $tag_id);
             })->first();
 
-       $tag= request()->tag??null;
-        return view('content.index', compact('total','tag','tagModel'));
+        $tag = request()->tag ?? null;
+        $page = request()->page ?? 1;
+        return view('content.index', compact('total', 'tag', 'tagModel', 'page'));
     }
 
     /**
@@ -55,8 +56,8 @@ class ContentController extends Controller
             abort(403);
         }
         $tags = Tag::where('user_id', request()->user()->id)->pluck('name', 'id');
-
-        return view('content.edit', compact('content', 'tags'));
+        $page = request()->page ?? null;
+        return view('content.edit', compact('content', 'tags', 'page'));
     }
 
 
@@ -76,10 +77,10 @@ class ContentController extends Controller
             abort(403);
         }
         $content->title = $request->title;
-        $content->text = $request->text;
+        $content->text = trim($request->text);
         $content->tag_id = $request->tag_id;
         $content->save();
-        return redirect()->route('content')->with('Success', '修改成功');
+        return redirect()->route('content', ['page' => request()->page])->with('Success', '修改成功');
     }
 
 
@@ -97,7 +98,7 @@ class ContentController extends Controller
             abort(403);
         }
         $content->delete();
-        return redirect()->route('content')->with('Success', '删除成功');
+        return redirect()->route('content',['page' => request()->page])->with('Success', '删除成功');
 
     }
 

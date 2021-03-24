@@ -18,7 +18,7 @@
                 </p>
             </div>
             <div class="border-t divide-gray-500">
-                <livewire:content :tag="$tag" :key="$tag"/>
+                <livewire:content :tag="$tag"  :key="$tag"/>
             </div>
         </div>
     </div>

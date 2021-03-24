@@ -40,6 +40,7 @@ Route::post('publish', [HomeController::class, 'create'])->name('publish.create'
 Route::get('mail/{mail}', [HomeController::class, 'mail']);
 Route::get('subscribe', [HomeController::class, 'subscribe']);
 
+
 Route::get('content/{tag?}', [ContentController::class, 'index'])->name('content');
 Route::get('content/{id}/edit', [ContentController::class, 'edit'])->name('content.edit');
 Route::put('content/{id}', [ContentController::class, 'update'])->name('content.update');

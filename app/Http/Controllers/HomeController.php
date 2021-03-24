@@ -10,7 +10,6 @@ use App\Models\Tag;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 
-//todo 2. 用户维护自己的标签已经订阅取消功能
 
 /**
  * Class HomeController

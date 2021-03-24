@@ -30,9 +30,9 @@
 
                     </div>
 
-                    <small class="text-base">
+                    <small class="text-sm">
 
-                        <a class="text-base text-gray-500" href="<?php echo e(route('content',
+                        <a class="text-sm text-gray-500" href="<?php echo e(route('content',
                         ['tag'=>$content->tag->id])); ?>"
                            title="<?php echo e($content->tag->name); ?>">
                             <svg class="w-4 h-4 fill-current inline-block"
@@ -61,8 +61,14 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                         </svg>
 
-                        <a href="<?php echo e(route('content.edit', [$content->id])); ?>"
-                           class="text-base text-blue-500"> <i class="far fa-edit"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                             fill="currentColor" class="w-4 h-4 fill-current inline-block
+                             text-gray-500">
+                            <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                            <path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" />
+                        </svg>
+                        <a href="<?php echo e(route('content.edit', [$content->id,'page'=>$page])); ?>"
+                           class="text-sm text-blue-500">
                             编辑
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -70,20 +76,22 @@
                              text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                         </svg>
-                        <a href="<?php echo e(route('content.delete', [$content->id])); ?>"
-                           class="text-base text-red-500"> <i class="fa fa-trash"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                             fill="currentColor" class="w-4 h-4 fill-current inline-block  text-gray-500">
+                            <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                        <a href="<?php echo e(route('content.delete', [$content->id,'page'=>$page])); ?>"
+                           class="text-sm text-red-500" onClick="return confirm('确定删除?')">
                             删除
                         </a>
                     </small>
 
                 </li>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
-
         </ul>
     </div>
     <div class="pt-6 pb-8 pl-6 pr-6 space-y-2 md:space-y-5">
-        <?php echo e($contents->onEachSide(0)->links()); ?>
+        <?php echo e($contents->appends(['page' => $page])->onEachSide(0)->links()); ?>
 
     </div>
 </dl>

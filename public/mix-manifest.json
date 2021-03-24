@@ -1,4 +1,17 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/hotkeys.js": "/js/hotkeys.js",
+    "/js/hotkeys.min.js": "/js/hotkeys.min.js",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/module.js": "/js/module.js",
+    "/js/module.min.js": "/js/module.min.js",
+    "/js/simditor.js": "/js/simditor.js",
+    "/js/simditor.min.js": "/js/simditor.min.js",
+    "/js/uploader.js": "/js/uploader.js",
+    "/js/uploader.min.js": "/js/uploader.min.js",
+    "/css/editor.scss": "/css/editor.scss",
+    "/css/fonticon.scss": "/css/fonticon.scss",
+    "/css/simditor.css": "/css/simditor.css",
+    "/css/simditor.scss": "/css/simditor.scss"
 }

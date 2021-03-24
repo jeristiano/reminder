@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+    @yield('styles')
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
@@ -43,7 +43,7 @@
             <livewire:footer/>
         @endif
         @stack('modals')
-
+        @yield('scripts')
         @livewireScripts
     </body>
 </html>

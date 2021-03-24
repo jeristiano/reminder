@@ -32,4 +32,19 @@ class ContentUpdateRequest extends FormRequest
             'text' => "required"
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'title.required' => '缺少主题',
+            'title.max' => '主题超过限制100字符',
+            'tag_id.integer' =>'便签必须为数字',
+            'tag_id.required' =>'便签必须',
+            'text.required' => '缺少内容',
+        ];
+    }
+
+
+
+
 }

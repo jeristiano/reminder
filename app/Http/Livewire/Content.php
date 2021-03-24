@@ -20,6 +20,7 @@ class Content extends Component
      * @var \App\Models\Note
      */
     public $tag=null;
+    public $dismiss=0;
 
 
     /**
@@ -41,6 +42,7 @@ class Content extends Component
                 return $query->where('tag_id', $tag_id);
             })
             ->paginate(5);
-        return view('livewire.content', ['contents' => $contents]);
+        return view('livewire.content', ['contents' => $contents,'page'=>request()->page??1]);
     }
+
 }
