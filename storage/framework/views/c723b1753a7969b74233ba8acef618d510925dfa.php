@@ -9,16 +9,16 @@
         <div class="border-t divide-gray-400">
             <?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('publish', [])->html();
-} elseif ($_instance->childHasBeenRendered('Wxcc2si')) {
-    $componentId = $_instance->getRenderedChildComponentId('Wxcc2si');
-    $componentTag = $_instance->getRenderedChildComponentTagName('Wxcc2si');
+    $html = \Livewire\Livewire::mount('publish', ['elementId' => 'nested_markdown_editor1'])->html();
+} elseif ($_instance->childHasBeenRendered('5qOcHLs')) {
+    $componentId = $_instance->getRenderedChildComponentId('5qOcHLs');
+    $componentTag = $_instance->getRenderedChildComponentTagName('5qOcHLs');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('Wxcc2si');
+    $_instance->preserveRenderedChild('5qOcHLs');
 } else {
-    $response = \Livewire\Livewire::mount('publish', []);
+    $response = \Livewire\Livewire::mount('publish', ['elementId' => 'nested_markdown_editor1']);
     $html = $response->html();
-    $_instance->logRenderedChild('Wxcc2si', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('5qOcHLs', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

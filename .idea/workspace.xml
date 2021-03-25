@@ -2,41 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/editor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/fonticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/simditor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/css/simditor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/hotkeys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/hotkeys.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/module.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/simditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/simditor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/uploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/editor/js/uploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/content/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ContentUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ContentUpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/validation-errors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/validation-errors.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/2fa021d023c9321d3a7b372bd3baaa43021f2257.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/2fa021d023c9321d3a7b372bd3baaa43021f2257.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/4ad4a6dc8f9dea704e8e4d40429c7e8b810df60e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4ad4a6dc8f9dea704e8e4d40429c7e8b810df60e.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c4fd4c24ccfa1887c74eefdc635d6b1d6e270b90.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c4fd4c24ccfa1887c74eefdc635d6b1d6e270b90.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/publish/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c723b1753a7969b74233ba8acef618d510925dfa.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c723b1753a7969b74233ba8acef618d510925dfa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +208,7 @@
       <workItem from="1615514751831" duration="15713000" />
       <workItem from="1615788757653" duration="58788000" />
       <workItem from="1616391772771" duration="33872000" />
-      <workItem from="1616563850484" duration="11277000" />
+      <workItem from="1616563850484" duration="22978000" />
     </task>
     <servers />
   </component>
@@ -268,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1616571656031">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1616653295649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616571656031" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616653295649" />
     <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616399365105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -284,9 +256,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865709344" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616574026989">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616656098632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616574026989" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616656098632" />
   </component>
 </project>
