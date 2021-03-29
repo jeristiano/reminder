@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Livewire\Counter;
+use App\Http\Livewire\Tags;
+use App\Http\Livewire\TagsEdit;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,12 +50,13 @@ Route::get('content/delete/{id}', [ContentController::class, 'delete'])->name('c
 
 
 
-Route::get('tags', [TagController::class, 'index'])->name('tags');
-Route::get('tags/create', [TagController::class, 'create'])->name('tags.create');
-Route::post('tags/create', [TagController::class, 'create'])->name('tags.create');
-Route::get('tags/{tag}/edit', [TagController::class, 'edit'])->name('tags.edit');;
-Route::put('tags/{tag}', [TagController::class, 'update'])->name('tags.save');;
-Route::get('tags/{tag}/delete', [TagController::class, 'delete'])->name('tags.delete');;
+Route::get('tags', Tags::class)->name('tags');
+//Route::get('tags', [TagController::class, 'index'])->name('tags');
+//Route::get('tags/create', [TagController::class, 'create'])->name('tags.create');
+//Route::post('tags/create', [TagController::class, 'create'])->name('tags.create');
+Route::get('tags/{tag}/edit', TagsEdit::class)->name('tags.edit');;
+//Route::put('tags/{tag}', [TagController::class, 'update'])->name('tags.save');;
+//Route::get('tags/{tag}/delete', [TagController::class, 'delete'])->name('tags.delete');;
 
 //订阅
 

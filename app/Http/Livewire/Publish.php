@@ -95,7 +95,7 @@ class Publish extends Component
                 $note->tag_id = $validatedData['tag_id'];
                 $note->title = $validatedData['title'];
                 $note->text = $value;
-              //  $note->save();
+                $note->save();
             }
         }
         session()->flash('Success', '发布成功');

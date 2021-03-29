@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/tags-edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/publish/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c723b1753a7969b74233ba8acef618d510925dfa.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c723b1753a7969b74233ba8acef618d510925dfa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../livewire-blog" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -208,7 +207,8 @@
       <workItem from="1615514751831" duration="15713000" />
       <workItem from="1615788757653" duration="58788000" />
       <workItem from="1616391772771" duration="33872000" />
-      <workItem from="1616563850484" duration="22978000" />
+      <workItem from="1616563850484" duration="23761000" />
+      <workItem from="1616739151910" duration="15782000" />
     </task>
     <servers />
   </component>
@@ -224,41 +224,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615858831417" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616565484674">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617005535844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616565484674" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616564864800">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617005535844" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616999974019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616564864800" />
-    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1616406070898">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616999974019" />
+    <state x="650" y="222" key="NewPhpClassDialog" timestamp="1616999866355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616406070898" />
+    <state x="650" y="222" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616999866355" />
+    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1617001283637">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617001283637" />
     <state x="453" y="164" key="SettingsEditor" timestamp="1615778627543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1616653295649">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1617006200287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1616653295649" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1617006200287" />
     <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616399365105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616399365105" />
-    <state x="663" y="222" width="707" height="628" key="find.popup" timestamp="1616479549488">
+    <state x="663" y="222" width="707" height="628" key="find.popup" timestamp="1617006670373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="222" width="707" height="628" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616479549488" />
+    <state x="663" y="222" width="707" height="628" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617006670373" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1615865709344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865709344" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1616656098632">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617000459431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1616656098632" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617000459431" />
   </component>
 </project>
