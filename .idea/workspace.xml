@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/tags.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tags.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e613ee5364b6371416be3737b95f4dd7aa79c3bf.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e613ee5364b6371416be3737b95f4dd7aa79c3bf.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +205,7 @@
       <workItem from="1615788757653" duration="58788000" />
       <workItem from="1616391772771" duration="33872000" />
       <workItem from="1616563850484" duration="23761000" />
-      <workItem from="1616739151910" duration="25091000" />
+      <workItem from="1616739151910" duration="26683000" />
     </task>
     <servers />
   </component>
@@ -245,10 +241,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1617094974336">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1617096858182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1617094974336" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1617096858182" />
     <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616399365105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
