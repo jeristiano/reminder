@@ -6,7 +6,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Livewire\Counter;
+use App\Http\Livewire\Subscription;
+use App\Http\Livewire\SubscriptionEdit;
 use App\Http\Livewire\Tags;
+use App\Http\Livewire\TagsAdd;
 use App\Http\Livewire\TagsEdit;
 use Illuminate\Support\Facades\Route;
 
@@ -51,21 +54,17 @@ Route::get('content/delete/{id}', [ContentController::class, 'delete'])->name('c
 
 
 Route::get('tags', Tags::class)->name('tags');
-//Route::get('tags', [TagController::class, 'index'])->name('tags');
-//Route::get('tags/create', [TagController::class, 'create'])->name('tags.create');
-//Route::post('tags/create', [TagController::class, 'create'])->name('tags.create');
+Route::get('tags/create', TagsAdd::class)->name('tags.create');
 Route::get('tags/{tag}/edit', TagsEdit::class)->name('tags.edit');;
-//Route::put('tags/{tag}', [TagController::class, 'update'])->name('tags.save');;
-//Route::get('tags/{tag}/delete', [TagController::class, 'delete'])->name('tags.delete');;
 
 //订阅
 
-Route::get('subscriptions', [SubscriptionController::class, 'index'])->name('subscriptions');
-Route::get('subscriptions/create', [SubscriptionController::class, 'create'])->name('subscriptions.create');
-Route::post('subscriptions/create', [SubscriptionController::class, 'create'])->name('subscriptions.create');
-Route::get('subscriptions/{sub}/edit', [SubscriptionController::class, 'edit'])->name('subscriptions.edit');;
-Route::put('subscriptions/{sub}', [SubscriptionController::class, 'update'])->name('subscriptions.save');;
-Route::get('subscriptions/{sub}/delete', [SubscriptionController::class, 'delete'])->name('subscriptions.delete');;
+Route::get('subscriptions', Subscription::class)->name('subscriptions');
+//Route::get('subscriptions/create', [SubscriptionController::class, 'create'])->name('subscriptions.create');
+//Route::post('subscriptions/create', [SubscriptionController::class, 'create'])->name('subscriptions.create');
+Route::get('subscriptions/{sub}/edit', SubscriptionEdit::class)->name('subscriptions.edit');;
+//Route::put('subscriptions/{sub}', [SubscriptionController::class, 'update'])->name('subscriptions.save');;
+//Route::get('subscriptions/{sub}/delete', [SubscriptionController::class, 'delete'])->name('subscriptions.delete');;
 
 //预览邮件
 Route::get('preview/{id}', [HomeController::class, 'preview'])->name('preview');

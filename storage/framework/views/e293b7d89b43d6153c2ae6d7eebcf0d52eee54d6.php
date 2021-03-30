@@ -15,7 +15,7 @@
    </div>
     <div class="max-auto w-full bg-white shadow-md rounded-md overflow-hidden border">
 
-        <form wire:submit.prevent="submit">
+        <form wire:submit.prevent="submit" >
             <div
                 class="flex justify-between items-center px-5 py-3 text-gray-700 border-b  w-full">
                 <h3 class="text-md">

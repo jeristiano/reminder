@@ -7,8 +7,8 @@
     <div class="bg-white shadow overflow-hidden sm:rounded-lg">
 
         <div class="px-4 py-5 sm:px-6 bg-green-500">
-            <h3 class="text-lg leading-6 font-medium text-white">
-                <a class="hover:text-green-500" href="{{route('content')}}" title="所有标签">标签</a>
+            <h3 class="text-base leading-6 font-medium text-white">
+                <a class="hover:text-black" href="{{route('content')}}" title="所有标签">标签</a>
             </h3>
             <p class="mt-4 max-w-2xl text-sm text-white">
                 当前共有标签: {{$total}} 个！
@@ -16,6 +16,16 @@
         </div>
 
         <div class="border-t divide-gray-500">
+
+            <div  class="flex px-3 py-3">
+                <a href="{{route('tags.create')}}" class="px-3 py-1 bg-green-600 text-white
+                rounded-md text-sm
+                hover:bg-green-500 focus:outline-none">创建
+                </a>
+
+            </div>
+
+
             <div class="flex flex-col">
                 <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">

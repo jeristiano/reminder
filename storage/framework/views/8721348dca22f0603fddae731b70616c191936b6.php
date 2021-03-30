@@ -1,4 +1,4 @@
-<div class="mt-10 container mx-auto px-8 md:w-2/4">
+<div class="mt-10 container mx-auto px-8 md:w-3/4">
     <div class="mb-3">
         <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.message','data' => []]); ?>
@@ -12,17 +12,16 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-
     </div>
 
     <div class="bg-white shadow overflow-hidden sm:rounded-lg">
 
         <div class="px-4 py-5 sm:px-6 bg-green-500">
             <h3 class="text-base leading-6 font-medium text-white">
-                <a class="hover:text-black" href="<?php echo e(route('content')); ?>" title="所有标签">标签</a>
+                <a class="hover:text-black" href="<?php echo e(route('subscriptions')); ?>" title="所有内容">订阅</a>
             </h3>
             <p class="mt-4 max-w-2xl text-sm text-white">
-                当前共有标签: <?php echo e($total); ?> 个！
+                当前共有订阅: <?php echo e($subscriptions->count()); ?> 个！
             </p>
         </div>
 
@@ -47,17 +46,27 @@
                                     <th scope="col"
                                         class="px-6 py-3 text-left text-base font-medium
                                         text-gray-500 uppercase tracking-wider">
-                                        名称
+                                        订阅便签
                                     </th>
                                     <th scope="col"
                                         class="px-6 py-3 text-left text-base font-medium
                                         text-gray-500 uppercase tracking-wider">
-                                        内容数量
+                                        设置时间
+                                    </th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-base font-medium
+                                        text-gray-500 uppercase tracking-wider">
+                                        执行时间
                                     </th>
                                     <th scope="col"
                                         class="px-6 py-3 text-left text-base font-medium
                                         text-gray-500 uppercase tracking-wider">
                                         创建时间
+                                    </th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-base font-medium
+                                        text-gray-500 uppercase tracking-wider">
+                                        更新时间
                                     </th>
                                     <th scope="col"
                                         class="px-6 py-3 text-left text-base font-medium
@@ -70,23 +79,23 @@
                                 <tbody class="bg-white divide-y divide-gray-200">
                                 <?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('tags-list', ['tags' => $tags])->html();
-} elseif ($_instance->childHasBeenRendered('HwvsKZq')) {
-    $componentId = $_instance->getRenderedChildComponentId('HwvsKZq');
-    $componentTag = $_instance->getRenderedChildComponentTagName('HwvsKZq');
+    $html = \Livewire\Livewire::mount('subscription-list', ['tags' => $tags,'subscriptions' => $subscriptions])->html();
+} elseif ($_instance->childHasBeenRendered('T4YVeT8')) {
+    $componentId = $_instance->getRenderedChildComponentId('T4YVeT8');
+    $componentTag = $_instance->getRenderedChildComponentTagName('T4YVeT8');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('HwvsKZq');
+    $_instance->preserveRenderedChild('T4YVeT8');
 } else {
-    $response = \Livewire\Livewire::mount('tags-list', ['tags' => $tags]);
+    $response = \Livewire\Livewire::mount('subscription-list', ['tags' => $tags,'subscriptions' => $subscriptions]);
     $html = $response->html();
-    $_instance->logRenderedChild('HwvsKZq', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('T4YVeT8', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
                                 </tbody>
                             </table>
                             <div class="pt-6 pb-8 pl-6 pr-6 space-y-2 md:space-y-5">
-                                <?php echo e($tags->onEachSide(0)->links()); ?>
+                                <?php echo e($subscriptions->onEachSide(0)->links()); ?>
 
                             </div>
 
@@ -97,4 +106,4 @@ echo $html;
         </div>
     </div>
 </div>
-<?php /**PATH /data/webroot/www/evenote/resources/views/livewire/tags.blade.php ENDPATH**/ ?>
+<?php /**PATH /data/webroot/www/evenote/resources/views/livewire/subscription.blade.php ENDPATH**/ ?>
