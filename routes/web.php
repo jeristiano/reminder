@@ -7,6 +7,7 @@ use App\Http\Controllers\TagController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Livewire\Counter;
 use App\Http\Livewire\Subscription;
+use App\Http\Livewire\SubscriptionCreate;
 use App\Http\Livewire\SubscriptionEdit;
 use App\Http\Livewire\Tags;
 use App\Http\Livewire\TagsAdd;
@@ -60,8 +61,7 @@ Route::get('tags/{tag}/edit', TagsEdit::class)->name('tags.edit');;
 //订阅
 
 Route::get('subscriptions', Subscription::class)->name('subscriptions');
-//Route::get('subscriptions/create', [SubscriptionController::class, 'create'])->name('subscriptions.create');
-//Route::post('subscriptions/create', [SubscriptionController::class, 'create'])->name('subscriptions.create');
+Route::get('subscriptions/create', SubscriptionCreate::class)->name('subscriptions.create');
 Route::get('subscriptions/{sub}/edit', SubscriptionEdit::class)->name('subscriptions.edit');;
 //Route::put('subscriptions/{sub}', [SubscriptionController::class, 'update'])->name('subscriptions.save');;
 //Route::get('subscriptions/{sub}/delete', [SubscriptionController::class, 'delete'])->name('subscriptions.delete');;

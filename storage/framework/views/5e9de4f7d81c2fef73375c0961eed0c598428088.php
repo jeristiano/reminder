@@ -27,10 +27,6 @@
 
             </td>
 
-            <td class="px-6 py-4 whitespace-nowrap">
-                <div class="text-sm text-gray-900"> <?php echo e($sub->updated_at); ?></div>
-
-            </td>
 
             <td class="px-6 py-4 whitespace-nowrap">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"

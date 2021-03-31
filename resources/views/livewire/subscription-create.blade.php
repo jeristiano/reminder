@@ -16,7 +16,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9 5l7 7-7 7"/>
                 </svg>
-                修改
+                添加
             </h3>
 
             <p class="mt-4 max-w-2xl text-sm text-white">
@@ -35,40 +35,33 @@
                                 <div class="px-5 py-6 bg-gray-200 text-gray-700 border-b">
                                     <div class="mt-2 relative rounded-md ">
                                         <label class="text-md ">订阅标签(小时)：</label>
-                                    <select  wire:model.lazy="tag_id" required name="tag_id[]"
-                                            class="w-full
-                                    appearance-none
-                                    rounded-md  focus:border-indigo-200  border-green-300 "  multiple>
-                                        @foreach($tags as $key=>$name){
-                                        <option value="{{$key}}"
-                                        @foreach   ($subscription->tag_ids??[] as $ot_id)
-
-                                            {{ ($ot_id == $key ? "selected":"") }}
-
+                                        <select wire:model="tag_id" required
+                                      class="w-full appearance-none rounded-md  focus:border-indigo-200  border-green-300 "  multiple>
+                                            @foreach($tags as $key=>$name){
+                                            <option value="{{$key}}"
+                                            >{{$name}}</option>
+                                            }
                                             @endforeach
-                                        >{{$name}}</option>
-                                        }
-                                        @endforeach
-                                    </select>
+                                        </select>
 
-                                    @error('tag_id')
-                                    <div class="text-red-500 px-3 py-3 inline-block ">
-                                        <svg class="inline-block h-5 w-6 fill-current text-red-500"
-                                             viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z"></path>
-                                        </svg>
-                                        <span>{{ $message }}</span>
+                                        @error('name')
+                                        <div class="text-red-500 px-3 py-3 inline-block ">
+                                            <svg class="inline-block h-5 w-6 fill-current text-red-500"
+                                                 viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z"></path>
+                                            </svg>
+                                            <span>{{ $message }}</span>
+                                        </div>
+                                        @enderror
                                     </div>
-                                    @enderror
-                                </div>
                                 </div>
                                 <div class="px-5 py-6 bg-gray-200 text-gray-700 border-b">
                                     <div class="mt-2 relative rounded-md ">
                                         <label class="text-md ">推送时间(小时)：</label>
 
                                         <input wire:model.lazy="hours"  type="text"
-                                               wire.attributes.value="{{$subscription->hours}}"
+
                                                class="mt-2 w-full appearance-none rounded-md  focus:border-indigo-200  border-green-300 text-gray-900">
                                     </div>
 
@@ -88,9 +81,7 @@
                                     <div class="mt-2 relative rounded-md ">
                                         <label class="text-md ">推送时间(分钟)：</label>
 
-                                        <input wire:model.lazy="minutes"  type="text"
-                                               wire.attributes.value="{{$subscription->minutes}}"
-                                               class="mt-2 w-full appearance-none rounded-md  focus:border-indigo-200  border-green-300 text-gray-900">
+                                        <input wire:model.lazy="minutes"  type="text" class="mt-2 w-full appearance-none rounded-md  focus:border-indigo-200  border-green-300 text-gray-900">
                                     </div>
 
                                     @error('minutes')
@@ -107,7 +98,7 @@
 
                                 <div class="flex justify-between items-center px-5 py-3">
                                     <button type="submit" class="px-3 py-1 bg-green-600 text-white rounded-md text-sm hover:bg-green-500 focus:outline-none">
-                                        保存
+                                        创建
                                     </button>
                                 </div>
                             </form>

@@ -1,4 +1,4 @@
-<div class="mt-10 container mx-auto px-8 md:w-3/4">
+<div class="mt-10 container mx-auto px-8 md:w-2/4">
     <div class="mb-3">
         <x-message />
     </div>
@@ -17,7 +17,7 @@
         <div class="border-t divide-gray-500">
 
             <div  class="flex px-3 py-3">
-                <a href="{{route('tags.create')}}" class="px-3 py-1 bg-green-600 text-white
+                <a href="{{route('subscriptions.create')}}" class="px-3 py-1 bg-green-600 text-white
                 rounded-md text-sm
                 hover:bg-green-500 focus:outline-none">创建
                 </a>
@@ -51,11 +51,6 @@
                                         class="px-6 py-3 text-left text-base font-medium
                                         text-gray-500 uppercase tracking-wider">
                                         创建时间
-                                    </th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-left text-base font-medium
-                                        text-gray-500 uppercase tracking-wider">
-                                        更新时间
                                     </th>
                                     <th scope="col"
                                         class="px-6 py-3 text-left text-base font-medium

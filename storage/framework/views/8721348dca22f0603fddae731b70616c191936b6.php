@@ -1,4 +1,4 @@
-<div class="mt-10 container mx-auto px-8 md:w-3/4">
+<div class="mt-10 container mx-auto px-8 md:w-2/4">
     <div class="mb-3">
         <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.message','data' => []]); ?>
@@ -28,7 +28,7 @@
         <div class="border-t divide-gray-500">
 
             <div  class="flex px-3 py-3">
-                <a href="<?php echo e(route('tags.create')); ?>" class="px-3 py-1 bg-green-600 text-white
+                <a href="<?php echo e(route('subscriptions.create')); ?>" class="px-3 py-1 bg-green-600 text-white
                 rounded-md text-sm
                 hover:bg-green-500 focus:outline-none">创建
                 </a>
@@ -66,11 +66,6 @@
                                     <th scope="col"
                                         class="px-6 py-3 text-left text-base font-medium
                                         text-gray-500 uppercase tracking-wider">
-                                        更新时间
-                                    </th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-left text-base font-medium
-                                        text-gray-500 uppercase tracking-wider">
                                         修改
                                     </th>
 
@@ -80,15 +75,15 @@
                                 <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('subscription-list', ['tags' => $tags,'subscriptions' => $subscriptions])->html();
-} elseif ($_instance->childHasBeenRendered('T4YVeT8')) {
-    $componentId = $_instance->getRenderedChildComponentId('T4YVeT8');
-    $componentTag = $_instance->getRenderedChildComponentTagName('T4YVeT8');
+} elseif ($_instance->childHasBeenRendered('sWbooqW')) {
+    $componentId = $_instance->getRenderedChildComponentId('sWbooqW');
+    $componentTag = $_instance->getRenderedChildComponentTagName('sWbooqW');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('T4YVeT8');
+    $_instance->preserveRenderedChild('sWbooqW');
 } else {
     $response = \Livewire\Livewire::mount('subscription-list', ['tags' => $tags,'subscriptions' => $subscriptions]);
     $html = $response->html();
-    $_instance->logRenderedChild('T4YVeT8', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('sWbooqW', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
