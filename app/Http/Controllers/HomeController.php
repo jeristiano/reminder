@@ -7,7 +7,7 @@ use App\Mail\MailDeliver;
 use App\Models\Note;
 use App\Models\Subscription;
 use App\Models\Tag;
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -24,6 +24,18 @@ class HomeController extends Controller
     public function __construct ()
     {
         $this->middleware('auth');
+    }
+
+
+    public function dashboard ()
+    {
+        $info['total_notes'] = Note::where('user_id',request()->user()->id)->count();
+        $info['total_tags']=Tag::where('user_id',request()->user()->id)->count();
+        $info['total_subs']=Subscription::where('user_id',request()->user()->id)->count();
+        $info['total_subs']=Subscription::where('user_id',request()->user()->id)
+            ->where('created_at','>=', Carbon::now()->startOfWeek()->toDateTimeString())
+            ->count();
+        return view('dashboard',compact('info'));
     }
 
     /**
@@ -63,8 +75,6 @@ class HomeController extends Controller
     }
 
 
-
-
     /**
      * @return mixed
      */
@@ -99,8 +109,6 @@ class HomeController extends Controller
     }
 
 
-
-
     /**
      * @return string
      */
@@ -108,10 +116,10 @@ class HomeController extends Controller
     {
         $mail = Note::with(['tag'])
             ->where('id', request()->id)
-            ->where('user_id',request()->user()->id)
+            ->where('user_id', request()->user()->id)
             ->get();
 
-        if($mail->isEmpty()){
+        if ($mail->isEmpty()) {
             abort(404);
         }
 

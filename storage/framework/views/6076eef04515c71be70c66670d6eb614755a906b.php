@@ -30,21 +30,56 @@
                                     <dt>
                                         <div
                                             class="absolute flex items-center justify-center h-12
-                                             w-12 rounded-md bg-green-500 text-white">
+                                             w-12 rounded-md bg-pink-500 text-white">
                                             <!-- Heroicon name: outline/globe-alt -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-                                                 fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      stroke-width="2"
-                                                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                                            <svg class="h-6 w-6"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                             </svg>
+
                                         </div>
-                                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                                            内容总数</p>
+                                        <p class="ml-16 text-2xl font-semibold text-gray-700 leading-6 ">
+                                            121
+                                        </p>
                                     </dt>
                                     <dd class="mt-2 ml-16 text-base text-gray-500">
-                                        当前共有内容数量:121 条
+                                        内容总数
+                                    </dd>
+                                </div>
+
+                                <div class="relative">
+                                    <dt>
+                                        <div
+                                            class="absolute flex items-center justify-center h-12
+                                             w-12 rounded-md bg-purple-500 text-white">
+
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+                                            </svg>
+                                        </div>
+                                        <p class="ml-16 text-2xl font-semibold text-gray-700 leading-6 ">
+                                            2
+                                        </p>
+                                    </dt>
+                                    <dd class="mt-2 ml-16 text-base text-gray-500">
+                                        主题数量
+                                    </dd>
+                                </div>
+
+                                <div class="relative">
+                                    <dt>
+                                        <div
+                                            class="absolute flex items-center justify-center h-12
+                                             w-12 rounded-md bg-indigo-500 text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                                            </svg>
+                                        </div>
+                                        <p class="ml-16 text-2xl font-semibold text-gray-700 leading-6 ">
+                                            2</p>
+                                    </dt>
+                                    <dd class="mt-2 ml-16 text-base text-gray-500">
+                                        订阅数
                                     </dd>
                                 </div>
 
@@ -52,62 +87,16 @@
                                     <dt>
                                         <div
                                             class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                                            <!-- Heroicon name: outline/scale -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-                                                 fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      stroke-width="2"
-                                                      d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                             </svg>
                                         </div>
-                                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                                            主题</p>
+                                        <p class="ml-16 text-2xl font-semibold text-gray-700 leading-6 ">
+                                            0</p>
                                     </dt>
                                     <dd class="mt-2 ml-16 text-base text-gray-500">
-                                        当前共有主题数量:2 个
-                                    </dd>
-                                </div>
-
-                                <div class="relative">
-                                    <dt>
-                                        <div
-                                            class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                                            <!-- Heroicon name: outline/lightning-bolt -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-                                                 fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      stroke-width="2"
-                                                      d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                                            订阅</p>
-                                    </dt>
-                                    <dd class="mt-2 ml-16 text-base text-gray-500">
-                                        当前推送任务总量为:2个
-                                    </dd>
-                                </div>
-
-                                <div class="relative">
-                                    <dt>
-                                        <div
-                                            class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-                                            <!-- Heroicon name: outline/annotation -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-                                                 fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      stroke-width="2"
-                                                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                                           本周发布</p>
-                                    </dt>
-                                    <dd class="mt-2 ml-16 text-base text-gray-500">
-                                        本周发布内容数量:0条
+                                       本周发布
 
                                     </dd>
                                 </div>
