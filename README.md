@@ -35,4 +35,17 @@ finally,we should run the command ：
 which means to publish the content of user has subscribed by the method of crontab,you may also
  run it in daemon mode,when it is used,you can quit the terminal.
 
+## Preview
+
+![dashborad.jpg](https://i.loli.net/2021/04/08/X8NIGwzPmi7fkOe.jpg)
+
+![publish.jpg](https://i.loli.net/2021/04/08/9loWa7pDsc6SYxC.jpg)
+
+![tags.jpg](https://i.loli.net/2021/04/08/K64H2ntIs5VZeNp.jpg)
+
+![subs.jpg](https://i.loli.net/2021/04/08/fsNDS2cYIpWK8b1.jpg)
+
+![edit.jpg](https://i.loli.net/2021/04/08/AH84N5yZREnQgPk.jpg)
+
+![contents.jpg](https://i.loli.net/2021/04/08/G9OAR7mdTxgPajo.jpg)
 

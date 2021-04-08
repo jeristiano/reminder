@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/publish/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/publish/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6076eef04515c71be70c66670d6eb614755a906b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6076eef04515c71be70c66670d6eb614755a906b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c723b1753a7969b74233ba8acef618d510925dfa.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c723b1753a7969b74233ba8acef618d510925dfa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/ccdb2805ce105cd803da3d9029bf9e1b9b2226a9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ccdb2805ce105cd803da3d9029bf9e1b9b2226a9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e293b7d89b43d6153c2ae6d7eebcf0d52eee54d6.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +210,7 @@
       <workItem from="1616739151910" duration="26766000" />
       <workItem from="1617159571301" duration="357000" />
       <workItem from="1617177048052" duration="8395000" />
-      <workItem from="1617850838310" duration="2116000" />
+      <workItem from="1617850838310" duration="2427000" />
     </task>
     <servers />
   </component>
