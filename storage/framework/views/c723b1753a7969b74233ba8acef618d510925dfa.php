@@ -5,20 +5,20 @@
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php $component->withAttributes([]); ?>
 
-    <div class="mt-10 container mx-auto px-8 md:w-2/4">
+    <div class="container mx-auto px-8 md:w-2/4">
         <div class="border-t divide-gray-400">
             <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('publish', ['elementId' => 'nested_markdown_editor1'])->html();
-} elseif ($_instance->childHasBeenRendered('5qOcHLs')) {
-    $componentId = $_instance->getRenderedChildComponentId('5qOcHLs');
-    $componentTag = $_instance->getRenderedChildComponentTagName('5qOcHLs');
+} elseif ($_instance->childHasBeenRendered('OzQ9olf')) {
+    $componentId = $_instance->getRenderedChildComponentId('OzQ9olf');
+    $componentTag = $_instance->getRenderedChildComponentTagName('OzQ9olf');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('5qOcHLs');
+    $_instance->preserveRenderedChild('OzQ9olf');
 } else {
     $response = \Livewire\Livewire::mount('publish', ['elementId' => 'nested_markdown_editor1']);
     $html = $response->html();
-    $_instance->logRenderedChild('5qOcHLs', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('OzQ9olf', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

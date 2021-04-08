@@ -32,7 +32,7 @@ class HomeController extends Controller
         $info['total_notes'] = Note::where('user_id',request()->user()->id)->count();
         $info['total_tags']=Tag::where('user_id',request()->user()->id)->count();
         $info['total_subs']=Subscription::where('user_id',request()->user()->id)->count();
-        $info['total_subs']=Subscription::where('user_id',request()->user()->id)
+        $info['recent_subs']=Subscription::where('user_id',request()->user()->id)
             ->where('created_at','>=', Carbon::now()->startOfWeek()->toDateTimeString())
             ->count();
         return view('dashboard',compact('info'));

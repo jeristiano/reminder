@@ -5,12 +5,13 @@
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php $component->withAttributes([]); ?>
     <div class="mt-10 container mx-auto px-8 md:w-2/4">
-        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div class="px-4 py-5 sm:px-6" >
-                <h3 class="text-lg leading-6 font-medium text-gray-900">
+        <div class="shadow overflow-hidden sm:rounded-lg ">
+            <div class="px-4 py-5 sm:px-6 bg-green-500 " >
+                <h3 class="text-lg leading-6 font-medium text-white">
 
-                    <a class="hover:text-green-500" href="<?php echo e(route('content')); ?>" title="所有标签">标签</a>
-                         <svg class="h-5 w-5 fill-current text-green-600 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    <a class="hover:text-green-100" href="<?php echo e(route('content')); ?>" title="所有标签">标签</a>
+                         <svg class="h-5 w-5 fill-current text-green-200 inline-block"
+                              xmlns="http://www.w3.org/2000/svg" fill="none"
                               viewBox="0 0 24 24"
                               stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -19,7 +20,7 @@
 
 
                 </h3>
-                <p class="mt-4 max-w-2xl text-sm text-gray-500">
+                <p class="mt-4 max-w-2xl text-sm text-white">
                     当前主题共有笔记: <?php echo e($total); ?> 条！
                 </p>
             </div>

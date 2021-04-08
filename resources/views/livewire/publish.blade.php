@@ -1,14 +1,14 @@
-<div class="container mx-auto px-4 py-4">
+<div class="container mx-auto px-4 py-4 ">
    <div class="mb-4">
        <x-message/>
    </div>
-    <div class="max-auto w-full bg-white shadow-md rounded-md overflow-hidden border">
-
-        <form wire:submit.prevent="submit" >
+    <div class="max-auto w-full  shadow-md rounded-md overflow-hidden border">
+        <form wire:submit.prevent="submit"  >
             <div
-                class="flex justify-between items-center px-5 py-3 text-gray-700 border-b  w-full">
+                class="flex justify-between items-center px-5 py-3 text-white border-b  w-full
+                bg-green-500">
                 <h3 class="text-md">
-                    <a class="hover:text-green-500" href="{{route('publish')}}"
+                    <a class="hover:text-gray-500" href="{{route('publish')}}"
                        title="发布">发布</a>
                     <svg class="h-5 w-5 fill-current text-green-600 inline-block"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -19,7 +19,6 @@
                     创建
                 </h3>
             </div>
-
 
             <div class="px-5 py-5 bg-gray-200 text-gray-700 border-b">
                 <div class="mt-2 relative rounded-md ">
