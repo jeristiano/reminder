@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6076eef04515c71be70c66670d6eb614755a906b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6076eef04515c71be70c66670d6eb614755a906b.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +164,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reminder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Console" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -168,16 +174,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\layouts" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app\Console" />
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views" />
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\assets" />
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources" />
       <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\vendor" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\layouts" />
+      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.views">
@@ -210,7 +216,8 @@
       <workItem from="1616739151910" duration="26766000" />
       <workItem from="1617159571301" duration="357000" />
       <workItem from="1617177048052" duration="8395000" />
-      <workItem from="1617850838310" duration="2427000" />
+      <workItem from="1617850838310" duration="4020000" />
+      <workItem from="1618031541709" duration="1516000" />
     </task>
     <servers />
   </component>
@@ -234,10 +241,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617180579775" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617327410128">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618032819545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617327410128" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618032819545" />
     <state x="650" y="222" key="NewPhpClassDialog" timestamp="1616999866355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -250,10 +257,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1617851332165">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1618032526306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1617851332165" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1618032526306" />
     <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616399365105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,9 +273,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865709344" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617852875677">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618032034948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617852875677" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618032034948" />
   </component>
 </project>

@@ -91,7 +91,7 @@ class Publish extends Component
             if (!$value) continue;
             if ($value) {
                 $note = new Note();
-                $note->user_id = request()->id;
+                $note->user_id = request()->user()->id;
                 $note->tag_id = $validatedData['tag_id'];
                 $note->title = $validatedData['title'];
                 $note->text = $value;
