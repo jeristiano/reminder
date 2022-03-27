@@ -4,7 +4,7 @@
             <div class="px-4 py-5 sm:px-6 bg-green-500 " >
                 <h3 class="text-lg leading-6 font-medium text-white">
 
-                    <a class="hover:text-green-100" href="{{route('content')}}" title="所有标签">标签</a>
+                    <a class="hover:text-green-100" href="{{route('tags')}}" title="所有标签">标签</a>
                          <svg class="h-5 w-5 fill-current text-green-200 inline-block"
                               xmlns="http://www.w3.org/2000/svg" fill="none"
                               viewBox="0 0 24 24"

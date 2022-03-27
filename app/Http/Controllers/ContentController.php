@@ -35,10 +35,9 @@ class ContentController extends Controller
             })->count();
 
         $tagModel = Tag::where('user_id', request()->user()->id)
-            ->when(request()->tag, function ($query, $tag_id) {
+            ->when(request()->tag??-1, function ($query, $tag_id) {
                 return $query->where('id', $tag_id);
             })->first();
-
         $tag = request()->tag ?? null;
         $page = request()->page ?? 1;
         return view('content.index', compact('total', 'tag', 'tagModel', 'page'));
@@ -77,19 +76,12 @@ class ContentController extends Controller
         if ($content->user_id != $request->user()->id) {
             abort(403);
         }
-        $textArray = explode("<hr>", trim($request->text));
 
-        foreach ($textArray as $value) {
-            if (!$value) continue;
-            if ($value) {
-                $note = new Note();
-                $note->user_id = request()->user()->id;
-                $note->tag_id =$request->tag_id;
-                $note->title = $request->title;
-                $note->text = $value;
-                $note->save();
-            }
-        }
+        $content->user_id = request()->user()->id;
+        $content->tag_id =$request->tag_id;
+        $content->title = $request->title;
+        $content->text = $request->text;
+        $content->save();
         return redirect()->route('content', ['page' => request()->page])->with('Success', '修改成功');
     }
 
