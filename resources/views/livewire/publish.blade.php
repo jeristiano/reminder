@@ -71,7 +71,7 @@
                 <div wire:ignore>
                     <label class="text-md text-gray-900">内容：</label>
                     <textarea wire:model="text" id="{{ $elementId }}"
-                              placeholder="批量请使用-----分隔符"></textarea>
+                              placeholder="批量请使用--  ---分隔符"></textarea>
                 </div>
 
                 @error('text')
@@ -106,24 +106,29 @@
 
 @section('styles')
     <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}">
 @stop
 
 @section('scripts')
 
     <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script type="text/javascript"  src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/module.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/hotkeys.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/uploader.js') }}"></script>
+    <script type="text/javascript"  src="{{ asset('js/simditor.js') }}"></script>
 
     <script>
 
         document.addEventListener('livewire:load', function () {
-            const easyMDE = new EasyMDE({
-                toolbar: ["horizontal-rule","bold", "italic", "heading", "|", "quote",
-                    "code", "ordered-list","unordered-list","|","preview","fullscreen"],
-                element: document.getElementById('{{ $elementId }}'),
-                forceSync: true
-            });
-
-            easyMDE.codemirror.on("blur", function () {
-             @this.text= easyMDE.value();
+            $(document).ready(function(){
+                const editor = new Simditor({
+                    textarea: $({{$elementId}}),
+                    cleanPaste: true
+                });
+                editor.on("blur",function (){
+                    @this.text =editor.getValue()
+                })
             });
         });
     </script>
