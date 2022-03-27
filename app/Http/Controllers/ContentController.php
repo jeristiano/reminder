@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContentUpdateRequest;
 use App\Models\Note;
 use App\Models\Tag;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
 /**
@@ -76,10 +77,19 @@ class ContentController extends Controller
         if ($content->user_id != $request->user()->id) {
             abort(403);
         }
-        $content->title = $request->title;
-        $content->text = trim($request->text);
-        $content->tag_id = $request->tag_id;
-        $content->save();
+        $textArray = explode("<hr>", trim($request->text));
+
+        foreach ($textArray as $value) {
+            if (!$value) continue;
+            if ($value) {
+                $note = new Note();
+                $note->user_id = request()->user()->id;
+                $note->tag_id =$request->tag_id;
+                $note->title = $request->title;
+                $note->text = $value;
+                $note->save();
+            }
+        }
         return redirect()->route('content', ['page' => request()->page])->with('Success', '修改成功');
     }
 

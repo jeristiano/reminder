@@ -60,9 +60,8 @@ class SubscribeCommand extends Command
             ->limit(200)
             ->get();
 
-
         if ($subscribes->isEmpty()) {
-//            Log::info('没有任务发布：'.now()->toDayDateTimeString());
+            Log::info('没有任务发布：'.now()->toDayDateTimeString());
             return 0;
         }
 
@@ -113,6 +112,13 @@ class SubscribeCommand extends Command
             ->later($when, $message);
     }
 
+    /**
+     * @desc  :
+     * @author: Kuangzhenyong
+     * @date  : 2021-09-18 13:12
+     * @param int $durationTime
+     * @return int|mixed
+     */
     private function getQueryTime ($durationTime = 1)
     {
         return Carbon::now()->hour + $durationTime < 23 ? Carbon::now()->hour + $durationTime : 0;

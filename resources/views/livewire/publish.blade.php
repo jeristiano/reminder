@@ -123,8 +123,7 @@
             });
 
             easyMDE.codemirror.on("blur", function () {
-            @this.text
-                = easyMDE.value();
+             @this.text= easyMDE.value();
             });
         });
     </script>

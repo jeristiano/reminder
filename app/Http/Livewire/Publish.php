@@ -87,6 +87,7 @@ class Publish extends Component
             'text' => 'required|min:3',
         ]);
         $textArray = explode("<hr>", $validatedData['text']);
+
         foreach ($textArray as $value) {
             if (!$value) continue;
             if ($value) {

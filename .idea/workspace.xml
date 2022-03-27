@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" afterDir="false" />
+    <list default="true" id="f3a63e37-7e37-437c-94e9-955be0c5c946" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SubscribeCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Publish.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6076eef04515c71be70c66670d6eb614755a906b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6076eef04515c71be70c66670d6eb614755a906b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/publish.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="FileColors">
-    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
-    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
-    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
-    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
-    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,130 +146,32 @@
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1pdZ6GBX9FB8T0nqpsmJuioZAfQ" />
+  <component name="ProjectId" id="26xMi0sbcfrFMX7do7kqRUOW7fn" />
   <component name="ProjectViewState">
-    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Console" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\app\Console" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\assets" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\vendor" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\resources\views\layouts" />
-      <recent name="\\wsl$\Ubuntu-20.04\data\webroot\www\evenote\public" />
-    </key>
-  </component>
-  <component name="RunManager" selected="PHPUnit.views">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
-    <configuration name="views" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner directory="$PROJECT_DIR$/storage/framework/views" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHPUnit.views" />
-      </list>
-    </recent_temporary>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a3d7f5f-5bed-4e69-a47f-e61f86670fe8" name="Default Changelist" comment="" />
-      <created>1615514750737</created>
+      <changelist id="f3a63e37-7e37-437c-94e9-955be0c5c946" name="Default Changelist" comment="" />
+      <created>1648360907699</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615514750737</updated>
-      <workItem from="1615514751831" duration="15713000" />
-      <workItem from="1615788757653" duration="58788000" />
-      <workItem from="1616391772771" duration="33872000" />
-      <workItem from="1616563850484" duration="23761000" />
-      <workItem from="1616739151910" duration="26766000" />
-      <workItem from="1617159571301" duration="357000" />
-      <workItem from="1617177048052" duration="8395000" />
-      <workItem from="1617850838310" duration="4020000" />
-      <workItem from="1618031541709" duration="1516000" />
+      <updated>1648360907699</updated>
+      <workItem from="1648360909111" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617850992825">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617850992825" />
-    <state x="689" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616574430468">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="689" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1616574430468" />
-    <state x="752" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1615858831417">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="752" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615858831417" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617180579775">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617180579775" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618032819545">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618032819545" />
-    <state x="650" y="222" key="NewPhpClassDialog" timestamp="1616999866355">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="650" y="222" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616999866355" />
-    <state x="774" y="438" key="NewPhpFileDialog" timestamp="1617001283637">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="774" y="438" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617001283637" />
-    <state x="453" y="164" key="SettingsEditor" timestamp="1615778627543">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="453" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615778627543" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1618032526306">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1618032526306" />
-    <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616399365105">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="752" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616399365105" />
-    <state x="663" y="222" width="707" height="628" key="find.popup" timestamp="1617006670373">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="663" y="222" width="707" height="628" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617006670373" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1615865709344">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615865709344" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618032034948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618032034948" />
   </component>
 </project>
