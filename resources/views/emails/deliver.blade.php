@@ -3,11 +3,11 @@
 # 每日箴言 {{\Carbon\Carbon::today()->toDateString()}}
 @foreach ($messages as $message)
 
-`{{ $message->tag->name }}`
+`{{ $message->tag->name??null }}`
 
-##  {{ $message->title }}
+##  {{ $message->title??null }}
 
-{!! $message->text !!}
+{!! $message->text??null !!}
 
 -----
 

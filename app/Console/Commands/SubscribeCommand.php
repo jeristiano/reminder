@@ -86,8 +86,9 @@ class SubscribeCommand extends Command
             $notes = Note::with(['tag'])
                 ->orderByRaw("RAND()")
                 ->where('tag_id', $tag_id)
-                ->limit(1)
-                ->get();
+                ->limit(10)
+                ->get()
+                ->random(1);
             if ($notes->isNotEmpty()) {
                 $response[] = $notes->pop();
             }
@@ -104,7 +105,6 @@ class SubscribeCommand extends Command
      */
     public function pushingNoteToQueue ($notes, $subscribe)
     {
-
         $when = $this->getDelayingTime($subscribe);
         $message = (new MailDeliver($notes))
             ->onQueue('emails');

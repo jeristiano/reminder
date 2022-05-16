@@ -56,8 +56,6 @@ Route::get('tags/{tag}/edit', TagsEdit::class)->name('tags.edit');;
 Route::get('subscriptions', Subscription::class)->name('subscriptions');
 Route::get('subscriptions/create', SubscriptionCreate::class)->name('subscriptions.create');
 Route::get('subscriptions/{sub}/edit', SubscriptionEdit::class)->name('subscriptions.edit');;
-//Route::put('subscriptions/{sub}', [SubscriptionController::class, 'update'])->name('subscriptions.save');;
-//Route::get('subscriptions/{sub}/delete', [SubscriptionController::class, 'delete'])->name('subscriptions.delete');;
 
 //预览邮件
 Route::get('preview/{id}', [HomeController::class, 'preview'])->name('preview');

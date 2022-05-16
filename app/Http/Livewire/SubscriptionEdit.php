@@ -43,12 +43,12 @@ class SubscriptionEdit extends Component
      * @param $propertyName
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function updated ($propertyName)
+    public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
     }
 
-    public function mount ($sub): void
+    public function mount($sub): void
     {
         $this->subscription = Subscription::find($sub);
         $this->hours = $this->subscription->hours;
@@ -59,7 +59,7 @@ class SubscriptionEdit extends Component
 
     }
 
-    public function render ()
+    public function render()
     {
         return view('livewire.subscription-edit');
     }
@@ -67,7 +67,7 @@ class SubscriptionEdit extends Component
 
     /**
      */
-    public function submit ()
+    public function submit()
     {
         $validatedData = $this->validate([
             'hours' => 'required|numeric|between:1,23',
@@ -79,19 +79,26 @@ class SubscriptionEdit extends Component
             ->where('minutes', $validatedData['minutes'])
             ->first();
 
-        if ($sub) {
-            session()->flash('Error', '重复订阅,同一时间段只能订阅一个!!');
-            return view('livewire.subscription-create');
-        }
-
-        Subscription::create(
-            [
+        if (!$sub) {
+            Subscription::create(
+                [
+                    'tag_ids' => implode(',', $validatedData['tag_id']),
+                    'hours' => $validatedData['hours'],
+                    'user_id' => request()->user()->id,
+                    'minutes' => $validatedData['minutes'],
+                ]
+            );
+        } else {
+            $update = [
                 'tag_ids' => implode(',', $validatedData['tag_id']),
                 'hours' => $validatedData['hours'],
                 'user_id' => request()->user()->id,
                 'minutes' => $validatedData['minutes'],
-            ]
-        );
+            ];
+            $sub->fill($update)->save();
+        }
+
+
         session()->flash('Success', '修改成功');
         return redirect()->route('subscriptions');
     }
