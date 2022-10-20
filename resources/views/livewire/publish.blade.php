@@ -124,7 +124,7 @@
             $(document).ready(function(){
                 const editor = new Simditor({
                     textarea: $({{$elementId}}),
-                    cleanPaste: true
+                    cleanPaste: false
                 });
                 editor.on("blur",function (){
                     @this.text =editor.getValue()

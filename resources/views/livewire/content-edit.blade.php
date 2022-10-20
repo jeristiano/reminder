@@ -80,7 +80,7 @@
         $(document).ready(function(){
             var editor = new Simditor({
                 textarea: $('#editor'),
-                cleanPaste: true
+                cleanPaste: false
             });
         });
     </script>
